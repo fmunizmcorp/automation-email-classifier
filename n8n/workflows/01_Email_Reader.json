@@ -1,0 +1,194 @@
+{
+  "name": "Email Classifier - 01 Email Reader",
+  "nodes": [
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "simple": false,
+        "filters": {
+          "labelIds": ["INBOX"],
+          "q": "is:unread"
+        },
+        "format": "resolved",
+        "options": {}
+      },
+      "id": "gmail_trigger",
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.gmailTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO automation_email_classifier.emails \n(gmail_message_id, gmail_thread_id, from_email, from_name, to_emails, \n subject, body_text, body_html, snippet, received_at, sent_at, \n has_attachments, attachment_count, size_bytes, processing_status)\nVALUES \n('{{ $json.id }}', \n '{{ $json.threadId }}', \n'{{ $json.payload.headers.find(h => h.name === \"From\").value }}', \n'{{ $json.payload.headers.find(h => h.name === \"From\").value.split(\"<\")[0].trim() }}', \nARRAY['{{ $json.payload.headers.find(h => h.name === \"To\").value }}']::TEXT[], \n'{{ $json.payload.headers.find(h => h.name === \"Subject\").value }}', \n'{{ $json.snippet }}', \n'{{ $json.payload.body.data }}', \n'{{ $json.snippet }}', \nTO_TIMESTAMP({{ $json.internalDate }} / 1000), \nTO_TIMESTAMP({{ $json.internalDate }} / 1000), \n{{ $json.payload.parts && $json.payload.parts.length > 1 }}, \n{{ $json.payload.parts ? $json.payload.parts.length - 1 : 0 }}, \n{{ $json.sizeEstimate }}, \n'pending')\nRETURNING id, gmail_message_id, from_email, subject;",
+        "additionalFields": {}
+      },
+      "id": "postgres_insert",
+      "name": "PostgreSQL - Insert Email",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [450, 300],
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "messageId": "={{ $node[\"Gmail Trigger\"].json.id }}",
+        "updateFields": {
+          "labelIds": ["PROCESSED"]
+        }
+      },
+      "id": "gmail_mark_processed",
+      "name": "Gmail - Mark as Processed",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2,
+      "position": [650, 300],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "1",
+          "name": "Gmail OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "email-classifier-webhook",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "webhook_trigger_classifier",
+      "name": "Trigger AI Classifier",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [850, 300],
+      "webhookId": "email-classifier"
+    },
+    {
+      "parameters": {
+        "url": "=https://n8n-n8n.aymebz.easypanel.host/webhook/ai-classifier",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "email_id",
+              "value": "={{ $node[\"PostgreSQL - Insert Email\"].json.id }}"
+            },
+            {
+              "name": "gmail_message_id",
+              "value": "={{ $node[\"Gmail Trigger\"].json.id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "http_request_classifier",
+      "name": "HTTP Request - AI Classifier",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status }}",
+              "operation": "equals",
+              "value2": "success"
+            }
+          ]
+        }
+      },
+      "id": "check_success",
+      "name": "Check Success",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.emails \nSET processing_status = 'completed', \n    processing_completed_at = CURRENT_TIMESTAMP \nWHERE id = {{ $node[\"PostgreSQL - Insert Email\"].json.id }};",
+        "additionalFields": {}
+      },
+      "id": "postgres_update_success",
+      "name": "PostgreSQL - Update Success",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1450, 200],
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.emails \nSET processing_status = 'failed', \n    processing_error = '{{ $json.error }}',\n    processing_attempts = processing_attempts + 1 \nWHERE id = {{ $node[\"PostgreSQL - Insert Email\"].json.id }};",
+        "additionalFields": {}
+      },
+      "id": "postgres_update_failed",
+      "name": "PostgreSQL - Update Failed",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2,
+      "position": [1450, 400],
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Gmail Trigger": {
+      "main": [[{ "node": "PostgreSQL - Insert Email", "type": "main", "index": 0 }]]
+    },
+    "PostgreSQL - Insert Email": {
+      "main": [[{ "node": "Gmail - Mark as Processed", "type": "main", "index": 0 }]]
+    },
+    "Gmail - Mark as Processed": {
+      "main": [[{ "node": "HTTP Request - AI Classifier", "type": "main", "index": 0 }]]
+    },
+    "HTTP Request - AI Classifier": {
+      "main": [[{ "node": "Check Success", "type": "main", "index": 0 }]]
+    },
+    "Check Success": {
+      "main": [
+        [{ "node": "PostgreSQL - Update Success", "type": "main", "index": 0 }],
+        [{ "node": "PostgreSQL - Update Failed", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "Email Classifier",
+      "id": "1"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-12-29T06:00:00.000Z",
+  "versionId": "1"
+}
