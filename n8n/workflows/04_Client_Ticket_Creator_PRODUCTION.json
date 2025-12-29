@@ -1,0 +1,200 @@
+{
+  "name": "[Email Classifier] 04 - Client Ticket Creator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "seconds",
+              "secondsInterval": 45
+            }
+          ]
+        }
+      },
+      "id": "schedule-ticket-creation",
+      "name": "Every 45 Seconds",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT \n  e.id as email_id,\n  e.email_id as gmail_id,\n  e.from_email,\n  e.to_email,\n  e.subject,\n  e.body_text,\n  e.body_html,\n  c.id as classification_id,\n  c.category,\n  c.subcategory,\n  c.priority,\n  c.summary,\n  c.suggested_response,\n  d.name as department_name,\n  d.id as department_id,\n  s.response_time_hours\nFROM automation_email_classifier.emails e\nJOIN automation_email_classifier.classifications c ON c.email_id = e.id\nJOIN automation_email_classifier.departments d ON d.id = c.department_id\nLEFT JOIN automation_email_classifier.slas s ON s.department_id = d.id \n  AND s.ticket_type = 'CLIENTE' \n  AND s.priority = c.priority\nWHERE e.status = 'classified'\n  AND c.category = 'CLIENTE'\n  AND c.requires_ticket = true\n  AND NOT EXISTS (\n    SELECT 1 FROM automation_email_classifier.tickets t \n    WHERE t.email_id = e.id\n  )\nORDER BY c.priority DESC, e.received_at ASC\nLIMIT 5;",
+        "additionalFields": {}
+      },
+      "id": "get-client-emails",
+      "name": "Get Client Emails Needing Tickets",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.email_id }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "has-emails",
+      "name": "Has Emails?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  const email = item.json;\n  \n  // Map priority to osTicket priority ID\n  const priorityMap = {\n    'URGENTE': '1',  // Emergency\n    'ALTA': '2',     // Urgent\n    'NORMAL': '3',   // Normal\n    'BAIXA': '4'     // Low\n  };\n  \n  // Map department to osTicket department/topic\n  const topicMap = {\n    'Atendimento': 'Atendimento ao Cliente',\n    'Clínico': 'Atendimento Clínico',\n    'Orçamento': 'Solicitação de Orçamento',\n    'Financeiro': 'Financeiro',\n    'Urgência': 'Atendimento Urgente',\n    'Admin': 'Administrativo'\n  };\n  \n  const ticketData = {\n    name: email.from_email.split('@')[0] || 'Cliente',\n    email: email.from_email,\n    phone: '',\n    subject: email.subject || '(Sem assunto)',\n    message: `${email.summary || ''}\n\n---\nEmail Original:\n${email.body_text}\n\n---\nCategoria: ${email.subcategory}\nPrioridade: ${email.priority}`,\n    priority: priorityMap[email.priority] || '3',\n    topicId: topicMap[email.department_name] || 'Atendimento ao Cliente',\n    autorespond: true,\n    alert: email.priority === 'URGENTE' || email.priority === 'ALTA'\n  };\n  \n  results.push({\n    json: {\n      ...email,\n      osticket_payload: ticketData\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "prepare-ticket-data",
+      "name": "Prepare Ticket Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.clinfec.com.br/osticket/api/tickets.json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-Key",
+              "value": "47A5F014F699019805B984E89018040B"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "name",
+              "value": "={{ $json.osticket_payload.name }}"
+            },
+            {
+              "name": "email",
+              "value": "={{ $json.osticket_payload.email }}"
+            },
+            {
+              "name": "subject",
+              "value": "={{ $json.osticket_payload.subject }}"
+            },
+            {
+              "name": "message",
+              "value": "={{ $json.osticket_payload.message }}"
+            },
+            {
+              "name": "priority",
+              "value": "={{ $json.osticket_payload.priority }}"
+            },
+            {
+              "name": "topicId",
+              "value": "={{ $json.osticket_payload.topicId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "create-osticket",
+      "name": "Create osTicket Ticket",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1050, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  try {\n    // Parse osTicket response\n    const response = item.json;\n    const ticketNumber = response.ticket_number || response.id || 'UNKNOWN';\n    \n    const emailData = $('Get Client Emails Needing Tickets').item.json;\n    \n    results.push({\n      json: {\n        email_id: emailData.email_id,\n        classification_id: emailData.classification_id,\n        ticket_number: ticketNumber,\n        ticket_source: 'osticket',\n        ticket_status: 'open',\n        department_id: emailData.department_id,\n        priority: emailData.priority,\n        sla_deadline: emailData.response_time_hours ? \n          new Date(Date.now() + (emailData.response_time_hours * 60 * 60 * 1000)).toISOString() : null,\n        created_successfully: true\n      }\n    });\n  } catch (error) {\n    results.push({\n      json: {\n        email_id: $('Get Client Emails Needing Tickets').item.json.email_id,\n        error: error.message,\n        created_successfully: false\n      }\n    });\n  }\n}\n\nreturn results;"
+      },
+      "id": "parse-ticket-response",
+      "name": "Parse Ticket Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1250, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO automation_email_classifier.tickets (\n  email_id, classification_id, ticket_number, ticket_source,\n  ticket_status, department_id, priority, sla_deadline,\n  created_at, updated_at\n)\nVALUES ($1, $2, $3, $4, $5, $6, $7, $8, NOW(), NOW())\nRETURNING id;",
+        "additionalFields": {}
+      },
+      "id": "save-ticket",
+      "name": "Save Ticket to Database",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1450, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.emails\nSET \n  status = 'ticket_created',\n  ticket_created_at = NOW(),\n  updated_at = NOW()\nWHERE id = $1;",
+        "additionalFields": {}
+      },
+      "id": "update-email-status",
+      "name": "Update Email Status",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1650, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every 45 Seconds": {
+      "main": [[{ "node": "Get Client Emails Needing Tickets", "type": "main", "index": 0 }]]
+    },
+    "Get Client Emails Needing Tickets": {
+      "main": [[{ "node": "Has Emails?", "type": "main", "index": 0 }]]
+    },
+    "Has Emails?": {
+      "main": [[{ "node": "Prepare Ticket Data", "type": "main", "index": 0 }]]
+    },
+    "Prepare Ticket Data": {
+      "main": [[{ "node": "Create osTicket Ticket", "type": "main", "index": 0 }]]
+    },
+    "Create osTicket Ticket": {
+      "main": [[{ "node": "Parse Ticket Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Ticket Response": {
+      "main": [[{ "node": "Save Ticket to Database", "type": "main", "index": 0 }]]
+    },
+    "Save Ticket to Database": {
+      "main": [[{ "node": "Update Email Status", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-12-29T00:00:00.000Z",
+  "versionId": "1"
+}

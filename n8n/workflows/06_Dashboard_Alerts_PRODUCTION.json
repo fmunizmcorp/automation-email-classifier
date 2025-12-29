@@ -1,0 +1,177 @@
+{
+  "name": "[Email Classifier] 06 - Dashboard Alerts",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 10
+            }
+          ]
+        }
+      },
+      "id": "schedule-alerts",
+      "name": "Every 10 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Check for SLA violations\nSELECT \n  t.id,\n  t.ticket_number,\n  t.priority,\n  e.subject,\n  e.from_email,\n  d.name as department,\n  t.sla_deadline,\n  EXTRACT(EPOCH FROM (t.sla_deadline - NOW())) / 3600 as hours_remaining,\n  'SLA_ALERT' as alert_type\nFROM automation_email_classifier.tickets t\nJOIN automation_email_classifier.emails e ON e.id = t.email_id\nJOIN automation_email_classifier.departments d ON d.id = t.department_id\nWHERE t.ticket_status IN ('open', 'pending')\n  AND t.sla_deadline IS NOT NULL\n  AND t.sla_deadline <= NOW() + INTERVAL '2 hours'\n  AND t.sla_deadline > NOW()\nORDER BY t.sla_deadline ASC\nLIMIT 10;",
+        "additionalFields": {}
+      },
+      "id": "check-sla-violations",
+      "name": "Check SLA Violations",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Check for pending spam approvals\nSELECT \n  sa.id,\n  e.subject,\n  e.from_email,\n  c.confidence_score,\n  EXTRACT(EPOCH FROM (NOW() - sa.created_at)) / 3600 as hours_pending,\n  'SPAM_APPROVAL' as alert_type\nFROM automation_email_classifier.spam_approvals sa\nJOIN automation_email_classifier.emails e ON e.id = sa.email_id\nJOIN automation_email_classifier.classifications c ON c.email_id = e.id\nWHERE sa.approval_status = 'pending'\n  AND sa.requires_action = true\n  AND sa.created_at < NOW() - INTERVAL '4 hours'\nORDER BY sa.created_at ASC\nLIMIT 10;",
+        "additionalFields": {}
+      },
+      "id": "check-pending-spam",
+      "name": "Check Pending Spam Approvals",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Check for classification errors\nSELECT \n  COUNT(*) as error_count,\n  'CLASSIFICATION_ERRORS' as alert_type\nFROM automation_email_classifier.emails\nWHERE status = 'error'\n  AND created_at > NOW() - INTERVAL '1 hour';",
+        "additionalFields": {}
+      },
+      "id": "check-errors",
+      "name": "Check Classification Errors",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 600],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Consolidate all alerts\nconst slaAlerts = $('Check SLA Violations').all();\nconst spamAlerts = $('Check Pending Spam Approvals').all();\nconst errorAlerts = $('Check Classification Errors').all();\n\nconst results = [];\nlet hasAlerts = false;\n\n// SLA Alerts\nif (slaAlerts && slaAlerts.length > 0) {\n  for (const alert of slaAlerts) {\n    if (alert.json.hours_remaining !== undefined) {\n      hasAlerts = true;\n      results.push({\n        json: {\n          type: 'SLA_ALERT',\n          severity: alert.json.hours_remaining < 1 ? 'CRITICAL' : 'WARNING',\n          message: `Ticket ${alert.json.ticket_number} - SLA em ${Math.round(alert.json.hours_remaining * 60)} minutos`,\n          details: alert.json\n        }\n      });\n    }\n  }\n}\n\n// Spam Approval Alerts\nif (spamAlerts && spamAlerts.length > 0) {\n  for (const alert of spamAlerts) {\n    if (alert.json.hours_pending > 0) {\n      hasAlerts = true;\n      results.push({\n        json: {\n          type: 'SPAM_APPROVAL',\n          severity: 'INFO',\n          message: `Spam pendente há ${Math.round(alert.json.hours_pending)}h - ${alert.json.subject}`,\n          details: alert.json\n        }\n      });\n    }\n  }\n}\n\n// Error Alerts\nif (errorAlerts && errorAlerts.length > 0) {\n  const errorCount = errorAlerts[0].json.error_count || 0;\n  if (errorCount > 0) {\n    hasAlerts = true;\n    results.push({\n      json: {\n        type: 'CLASSIFICATION_ERRORS',\n        severity: errorCount > 5 ? 'CRITICAL' : 'WARNING',\n        message: `${errorCount} erros de classificação na última hora`,\n        details: { error_count: errorCount }\n      }\n    });\n  }\n}\n\nif (!hasAlerts) {\n  results.push({\n    json: {\n      type: 'NO_ALERTS',\n      severity: 'INFO',\n      message: 'Sistema operando normalmente',\n      details: {}\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "consolidate-alerts",
+      "name": "Consolidate Alerts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.type }}",
+              "operation": "notEqual",
+              "value2": "NO_ALERTS"
+            }
+          ]
+        }
+      },
+      "id": "has-real-alerts",
+      "name": "Has Real Alerts?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [850, 400]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO automation_email_classifier.execution_logs (\n  workflow_name, \n  execution_status, \n  processed_count,\n  error_message,\n  execution_data,\n  created_at\n)\nVALUES (\n  'Dashboard Alerts',\n  CASE \n    WHEN $2 = 'CRITICAL' THEN 'error'\n    WHEN $2 = 'WARNING' THEN 'warning'\n    ELSE 'info'\n  END,\n  1,\n  $3,\n  $4::jsonb,\n  NOW()\n);",
+        "additionalFields": {}
+      },
+      "id": "log-alert",
+      "name": "Log Alert",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1050, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Log dashboard check execution\nINSERT INTO automation_email_classifier.execution_logs (\n  workflow_name,\n  execution_status,\n  processed_count,\n  execution_data,\n  created_at\n)\nVALUES (\n  'Dashboard Alerts - Health Check',\n  'success',\n  0,\n  '{\"status\": \"healthy\", \"message\": \"No alerts at this time\"}'::jsonb,\n  NOW()\n);",
+        "additionalFields": {}
+      },
+      "id": "log-healthy",
+      "name": "Log System Healthy",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1050, 500],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every 10 Minutes": {
+      "main": [
+        [
+          { "node": "Check SLA Violations", "type": "main", "index": 0 },
+          { "node": "Check Pending Spam Approvals", "type": "main", "index": 0 },
+          { "node": "Check Classification Errors", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Check SLA Violations": {
+      "main": [[{ "node": "Consolidate Alerts", "type": "main", "index": 0 }]]
+    },
+    "Check Pending Spam Approvals": {
+      "main": [[{ "node": "Consolidate Alerts", "type": "main", "index": 0 }]]
+    },
+    "Check Classification Errors": {
+      "main": [[{ "node": "Consolidate Alerts", "type": "main", "index": 0 }]]
+    },
+    "Consolidate Alerts": {
+      "main": [[{ "node": "Has Real Alerts?", "type": "main", "index": 0 }]]
+    },
+    "Has Real Alerts?": {
+      "main": [
+        [{ "node": "Log Alert", "type": "main", "index": 0 }],
+        [{ "node": "Log System Healthy", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-12-29T00:00:00.000Z",
+  "versionId": "1"
+}

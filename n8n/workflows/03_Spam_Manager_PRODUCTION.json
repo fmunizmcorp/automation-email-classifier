@@ -1,0 +1,191 @@
+{
+  "name": "[Email Classifier] 03 - Spam Manager",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "schedule-spam-check",
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT \n  sa.id as approval_id,\n  sa.email_id,\n  e.email_id as gmail_id,\n  e.from_email,\n  e.subject,\n  e.body_text,\n  c.summary,\n  c.confidence_score\nFROM automation_email_classifier.spam_approvals sa\nJOIN automation_email_classifier.emails e ON sa.email_id = e.id\nLEFT JOIN automation_email_classifier.classifications c ON c.email_id = e.id\nWHERE sa.approval_status = 'pending'\n  AND sa.requires_action = true\nORDER BY sa.created_at DESC\nLIMIT 10;",
+        "additionalFields": {}
+      },
+      "id": "get-pending-spam",
+      "name": "Get Pending Spam",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.approval_id }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "has-spam",
+      "name": "Has Spam to Process?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Automatic approval logic based on confidence score\nconst items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  const confidenceScore = parseFloat(item.json.confidence_score || 0.8);\n  const fromEmail = (item.json.from_email || '').toLowerCase();\n  \n  // Auto-approve spam if:\n  // 1. High confidence (>0.9)\n  // 2. Known spam domains\n  const knownSpamDomains = ['noreply@', 'newsletter@', 'marketing@', 'promo@'];\n  const isKnownSpam = knownSpamDomains.some(domain => fromEmail.includes(domain));\n  \n  let action = 'pending';  // Default: requires manual approval\n  let actionReason = 'Requires manual review';\n  \n  if (confidenceScore > 0.9) {\n    action = 'auto_approved';\n    actionReason = 'High confidence spam detection';\n  } else if (isKnownSpam && confidenceScore > 0.7) {\n    action = 'auto_approved';\n    actionReason = 'Known spam sender pattern';\n  }\n  \n  results.push({\n    json: {\n      ...item.json,\n      suggested_action: action,\n      action_reason: actionReason\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "auto-approval-logic",
+      "name": "Auto Approval Logic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [850, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.suggested_action }}",
+              "value2": "auto_approved"
+            }
+          ]
+        }
+      },
+      "id": "should-auto-approve",
+      "name": "Should Auto Approve?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1050, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.spam_approvals\nSET \n  approval_status = 'approved',\n  approved_by = 'SYSTEM_AUTO',\n  approved_at = NOW(),\n  approval_notes = $2,\n  requires_action = false,\n  updated_at = NOW()\nWHERE id = $1\nRETURNING id;",
+        "additionalFields": {}
+      },
+      "id": "approve-spam",
+      "name": "Auto Approve Spam",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1250, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "message",
+        "messageId": "={{ $json.gmail_id }}",
+        "action": "label",
+        "labelIds": "SPAM"
+      },
+      "id": "gmail-mark-spam",
+      "name": "Mark as Spam in Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [1450, 100],
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "GMAIL_OAUTH2_ID",
+          "name": "Gmail OAuth2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.emails\nSET \n  status = 'spam_confirmed',\n  updated_at = NOW()\nWHERE id = $1;",
+        "additionalFields": {}
+      },
+      "id": "update-email-spam",
+      "name": "Update Email as Spam",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1650, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- For manual review items, just log them\nINSERT INTO automation_email_classifier.execution_logs (\n  workflow_name, execution_status, processed_count,\n  error_message, execution_data, created_at\n)\nVALUES (\n  'Spam Manager - Manual Review Required',\n  'info',\n  1,\n  NULL,\n  $1::jsonb,\n  NOW()\n);",
+        "additionalFields": {}
+      },
+      "id": "log-manual-review",
+      "name": "Log Manual Review Required",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1250, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [[{ "node": "Get Pending Spam", "type": "main", "index": 0 }]]
+    },
+    "Get Pending Spam": {
+      "main": [[{ "node": "Has Spam to Process?", "type": "main", "index": 0 }]]
+    },
+    "Has Spam to Process?": {
+      "main": [[{ "node": "Auto Approval Logic", "type": "main", "index": 0 }]]
+    },
+    "Auto Approval Logic": {
+      "main": [[{ "node": "Should Auto Approve?", "type": "main", "index": 0 }]]
+    },
+    "Should Auto Approve?": {
+      "main": [
+        [{ "node": "Auto Approve Spam", "type": "main", "index": 0 }],
+        [{ "node": "Log Manual Review Required", "type": "main", "index": 0 }]
+      ]
+    },
+    "Auto Approve Spam": {
+      "main": [[{ "node": "Mark as Spam in Gmail", "type": "main", "index": 0 }]]
+    },
+    "Mark as Spam in Gmail": {
+      "main": [[{ "node": "Update Email as Spam", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-12-29T00:00:00.000Z",
+  "versionId": "1"
+}

@@ -1,0 +1,199 @@
+{
+  "name": "[Email Classifier] 02 - AI Classifier",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "seconds",
+              "secondsInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "schedule-classifier",
+      "name": "Every 30 Seconds",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT id, email_id, from_email, to_email, subject, body_text, body_html, received_at\nFROM automation_email_classifier.emails\nWHERE status = 'pending_classification'\nORDER BY received_at ASC\nLIMIT 5;",
+        "additionalFields": {}
+      },
+      "id": "get-pending-emails",
+      "name": "Get Pending Emails",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.id }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "check-if-has-emails",
+      "name": "Has Emails?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4",
+        "messages": {
+          "values": [
+            {
+              "content": "=Você é um assistente especializado em classificação de emails para uma clínica médica.\n\nClassifique o email abaixo em uma das 3 categorias:\n1. SPAM/PROMO - Emails promocionais, spam, newsletters não solicitadas\n2. CLIENTE/PACIENTE - Emails de clientes/pacientes sobre atendimento, agendamentos, orçamentos, dúvidas médicas\n3. ADMINISTRATIVO - Emails administrativos internos, fornecedores, RH, finanças, TI\n\nPara emails CLIENTE/PACIENTE, identifique também:\n- Tipo de solicitação: INFORMACAO, ORCAMENTO, AGENDAMENTO, URGENTE, RECLAMACAO, OUTROS\n- Departamento: Atendimento, Financeiro, Clínico, Orçamento, TI, RH, Urgência, Admin\n- Prioridade: URGENTE, ALTA, NORMAL, BAIXA\n- Sentimento: POSITIVO, NEUTRO, NEGATIVO\n\nEmail:\nDE: {{ $json.from_email }}\nPARA: {{ $json.to_email }}\nASSUNTO: {{ $json.subject }}\nCORPO: {{ $json.body_text }}\n\nResponda APENAS com um JSON válido neste formato:\n{\n  \"category\": \"SPAM\" ou \"CLIENTE\" ou \"ADMINISTRATIVO\",\n  \"subcategory\": \"tipo da solicitação\",\n  \"department_name\": \"nome do departamento\",\n  \"priority\": \"URGENTE\" ou \"ALTA\" ou \"NORMAL\" ou \"BAIXA\",\n  \"sentiment\": \"POSITIVO\" ou \"NEUTRO\" ou \"NEGATIVO\",\n  \"requires_ticket\": true ou false,\n  \"confidence_score\": 0.0 a 1.0,\n  \"summary\": \"resumo do email em 1-2 frases\",\n  \"suggested_response\": \"sugestão de resposta se aplicável\"\n}"
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.3,
+          "maxTokens": 500
+        }
+      },
+      "id": "openai-classify",
+      "name": "OpenAI - Classify Email",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.3,
+      "position": [850, 200],
+      "credentials": {
+        "openAiApi": {
+          "id": "OPENAI_API_ID",
+          "name": "OpenAI API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  try {\n    // Parse OpenAI response\n    const aiResponse = JSON.parse(item.json.message || item.json.output || item.json.text || '{}');\n    \n    const emailId = $('Get Pending Emails').item.json.id;\n    const classification = {\n      email_id: emailId,\n      category: aiResponse.category || 'UNKNOWN',\n      subcategory: aiResponse.subcategory || 'OUTROS',\n      department_name: aiResponse.department_name || 'Admin',\n      priority: aiResponse.priority || 'NORMAL',\n      sentiment: aiResponse.sentiment || 'NEUTRO',\n      requires_ticket: aiResponse.requires_ticket !== false,\n      confidence_score: aiResponse.confidence_score || 0.8,\n      summary: aiResponse.summary || '',\n      suggested_response: aiResponse.suggested_response || '',\n      classified_at: new Date().toISOString()\n    };\n    \n    results.push({ json: classification });\n  } catch (error) {\n    results.push({ \n      json: { \n        email_id: $('Get Pending Emails').item.json.id,\n        category: 'ERROR',\n        error: error.message \n      } \n    });\n  }\n}\n\nreturn results;"
+      },
+      "id": "parse-classification",
+      "name": "Parse Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1050, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Get department_id first\nWITH dept AS (\n  SELECT id FROM automation_email_classifier.departments \n  WHERE name = $2 LIMIT 1\n),\nemail_data AS (\n  SELECT id FROM automation_email_classifier.emails WHERE id = $1\n)\nINSERT INTO automation_email_classifier.classifications (\n  email_id, department_id, category, subcategory, \n  priority, sentiment, requires_ticket, confidence_score,\n  summary, suggested_response, classified_at, created_at\n)\nSELECT \n  email_data.id, \n  COALESCE(dept.id, 8),  -- Default to Admin (id 8)\n  $3, $4, $5, $6, $7, $8, $9, $10, $11, NOW()\nFROM email_data\nLEFT JOIN dept ON true\nRETURNING id;",
+        "additionalFields": {}
+      },
+      "id": "insert-classification",
+      "name": "Save Classification",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1250, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE automation_email_classifier.emails \nSET status = 'classified', classification_completed_at = NOW(), updated_at = NOW()\nWHERE id = $1;",
+        "additionalFields": {}
+      },
+      "id": "update-email-status",
+      "name": "Update Email Status",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1450, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.category }}",
+              "value2": "SPAM"
+            }
+          ]
+        }
+      },
+      "id": "check-if-spam",
+      "name": "Is SPAM?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1650, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO automation_email_classifier.spam_approvals (\n  email_id, classification_id, approval_status, \n  requires_action, created_at\n)\nVALUES ($1, $2, 'pending', true, NOW())\nRETURNING id;",
+        "additionalFields": {}
+      },
+      "id": "create-spam-approval",
+      "name": "Create Spam Approval",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1850, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CRED_ID",
+          "name": "PostgreSQL - bdn8n"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every 30 Seconds": {
+      "main": [[{ "node": "Get Pending Emails", "type": "main", "index": 0 }]]
+    },
+    "Get Pending Emails": {
+      "main": [[{ "node": "Has Emails?", "type": "main", "index": 0 }]]
+    },
+    "Has Emails?": {
+      "main": [[{ "node": "OpenAI - Classify Email", "type": "main", "index": 0 }]]
+    },
+    "OpenAI - Classify Email": {
+      "main": [[{ "node": "Parse Classification", "type": "main", "index": 0 }]]
+    },
+    "Parse Classification": {
+      "main": [[{ "node": "Save Classification", "type": "main", "index": 0 }]]
+    },
+    "Save Classification": {
+      "main": [[{ "node": "Update Email Status", "type": "main", "index": 0 }]]
+    },
+    "Update Email Status": {
+      "main": [[{ "node": "Is SPAM?", "type": "main", "index": 0 }]]
+    },
+    "Is SPAM?": {
+      "main": [[{ "node": "Create Spam Approval", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-12-29T00:00:00.000Z",
+  "versionId": "1"
+}
