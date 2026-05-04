@@ -1,7 +1,7 @@
 # Graph Report - automation-email-classifier  (2026-05-04)
 
 ## Corpus Check
-- 16 files · ~19,580 words
+- 16 files · ~19,884 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `84825033`
+- Built from commit: `14b70294`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
