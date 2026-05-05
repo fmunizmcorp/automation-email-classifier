@@ -1,16 +1,16 @@
-# Graph Report - automation-email-classifier  (2026-05-04)
+# Graph Report - automation-email-classifier  (2026-05-05)
 
 ## Corpus Check
 - 16 files · ~19,884 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 0 nodes · 0 edges · 0 communities detected
+- 0 nodes · 0 edges · 0 communities
 - Extraction: 0% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `14b70294`
+- Built from commit: `e157584a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
