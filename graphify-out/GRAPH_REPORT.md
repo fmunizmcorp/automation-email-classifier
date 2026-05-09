@@ -1,4 +1,4 @@
-# Graph Report - automation-email-classifier  (2026-05-08)
+# Graph Report - automation-email-classifier  (2026-05-09)
 
 ## Corpus Check
 - 26 files · ~19,884 words
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `20aed3ea`
+- Built from commit: `9adc6189`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
