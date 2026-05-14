@@ -1,106 +1,106 @@
 {
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/004_create_classifications_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "977a6e9fc77fbebc6cf4e2dbcfc1a378"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/001_create_departments_table.sql": {
-    "mtime": 1778662108.3769755,
+    "mtime": 1778748100.6825073,
     "hash": "3d1a33f69afed6bc760b630570679bfb"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/005_create_tickets_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "64baf76c02a30cf77c478c3f6433e65b"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/003_create_emails_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "1e2e3c1656db32c8436e75eac4fb58f1"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/007_create_knowledge_base_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "d52269b45ee6e7aaee2bba575830c323"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/006_create_spam_approvals_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "4c2fefea85c85a1cf173e223ac54e386"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/008_create_chat_history_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "2ac10b72cc06a794227abb5acc20ae39"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/002_create_slas_table.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "0513e0ab7cb2f6dfccbca7d6d334dfa1"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/seeds/002_seed_slas.sql": {
-    "mtime": 1778662108.377516,
+    "mtime": 1778748100.6829922,
     "hash": "c9a69173fd219992363cbcb3f63fdd84"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/seeds/001_seed_departments.sql": {
-    "mtime": 1778662108.3770423,
+    "mtime": 1778748100.6825738,
     "hash": "002d5eb7d15311a03544fe94c54a7da5"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_tickets_by_department.sql": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "9413cdeaca9858561947c58264dfc2bf"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_dashboard_overview.sql": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "b14c9f5db25d39e6e774f7219761ac87"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_knowledge_base_stats.sql": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "581076711566df63cccff910ddc517c3"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_classifications_analysis.sql": {
-    "mtime": 1778662108.377516,
+    "mtime": 1778748100.6829922,
     "hash": "cc85009e56b1744ee5db353677e85c44"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_sla_performance.sql": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "1a5dcc943ca361e6dbc8a36ad15ccfe2"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_spam_management.sql": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "4fb2fb69974abeff958ef211580c6790"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/README.md": {
-    "mtime": 1778662108.3764775,
+    "mtime": 1778748100.6820862,
     "hash": "eb2f8691ba37aaaf4f0f6c64b4605af1"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/STATUS_FINAL.md": {
-    "mtime": 1778662108.3764775,
+    "mtime": 1778748100.6820862,
     "hash": "226b73fb747f19b6fe389db527e57fbc"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/CLAUDE.md": {
-    "mtime": 1778662108.3764775,
+    "mtime": 1778748100.6819563,
     "hash": "b602827fb7b9610fceb9738a3f4c9a73"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/IMPORT_MANUAL_GUIDE.md": {
-    "mtime": 1778662108.3764775,
+    "mtime": 1778748100.6819563,
     "hash": "08753f41cc00759f108545e0fda759b9"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/WORKFLOWS_SPECIFICATION.md": {
-    "mtime": 1778662108.380472,
+    "mtime": 1778748100.6863415,
     "hash": "b28952830569a2edd3646ea5b6d56e4c"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/SETUP.md": {
-    "mtime": 1778662108.377899,
+    "mtime": 1778748100.683396,
     "hash": "ddf8a798d96b5705b45504c2a90ab5e7"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/DEPLOY_GUIDE.md": {
-    "mtime": 1778662108.377899,
+    "mtime": 1778748100.683396,
     "hash": "3735b9555796fb4a585fdcf4df7dccb1"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/ARCHITECTURE.md": {
-    "mtime": 1778662108.377899,
+    "mtime": 1778748100.683396,
     "hash": "fbd0a9d98d8459f0c2c90823b71f2f95"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/APRENDIZADOS.md": {
-    "mtime": 1778662108.3776343,
+    "mtime": 1778748100.6831048,
     "hash": "9376c54fd8aad56cf276765be87afa30"
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/HISTORICO.md": {
-    "mtime": 1778662108.377899,
+    "mtime": 1778748100.683396,
     "hash": "d2614487cb192614c0d690cd44be1754"
   }
 }
