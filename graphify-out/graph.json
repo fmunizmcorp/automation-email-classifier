@@ -3078,7 +3078,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L190",
       "id": "docs_setup_passo_3_configura\u00e7\u00e3o_do_metabase",
-      "community": 10,
+      "community": 2,
       "norm_label": "\ud83d\udcca passo 3: configuracao do metabase"
     },
     {
@@ -3087,7 +3087,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L192",
       "id": "docs_setup_3_1_acessar_metabase",
-      "community": 10,
+      "community": 2,
       "norm_label": "3.1 acessar metabase"
     },
     {
@@ -3096,7 +3096,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L198",
       "id": "docs_setup_3_2_adicionar_database_connection",
-      "community": 10,
+      "community": 2,
       "norm_label": "3.2 adicionar database connection"
     },
     {
@@ -3105,7 +3105,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L214",
       "id": "docs_setup_3_3_criar_dashboards",
-      "community": 10,
+      "community": 2,
       "norm_label": "3.3 criar dashboards"
     },
     {
@@ -3114,7 +3114,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L216",
       "id": "docs_setup_dashboard_1_overview_geral",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 1: overview geral"
     },
     {
@@ -3123,7 +3123,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L225",
       "id": "docs_setup_dashboard_2_classifica\u00e7\u00f5es",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 2: classificacoes"
     },
     {
@@ -3132,7 +3132,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L234",
       "id": "docs_setup_dashboard_3_sla_performance",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 3: sla performance"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L243",
       "id": "docs_setup_dashboard_4_tickets_por_departamento",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 4: tickets por departamento"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L252",
       "id": "docs_setup_dashboard_5_gest\u00e3o_de_spam",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 5: gestao de spam"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L261",
       "id": "docs_setup_dashboard_6_knowledge_base",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 6: knowledge base"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L272",
       "id": "docs_setup_passo_4_testes_iniciais",
-      "community": 2,
+      "community": 25,
       "norm_label": "\ud83d\udd04 passo 4: testes iniciais"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L274",
       "id": "docs_setup_4_1_teste_de_conex\u00f5es",
-      "community": 2,
+      "community": 25,
       "norm_label": "4.1 teste de conexoes"
     },
     {
@@ -3186,7 +3186,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L276",
       "id": "docs_setup_codeblock_5",
-      "community": 2,
+      "community": 25,
       "norm_label": "code:bash (# testar postgresql)"
     },
     {
@@ -3195,7 +3195,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L304",
       "id": "docs_setup_4_2_teste_end_to_end",
-      "community": 2,
+      "community": 25,
       "norm_label": "4.2 teste end-to-end"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_file": "docs/SETUP.md",
       "source_location": "L313",
       "id": "docs_setup_codeblock_6",
-      "community": 2,
+      "community": 25,
       "norm_label": "code:sql (-- verificar email inserido)"
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L16",
       "id": "docs_deploy_guide_fase_1_importa\u00e7\u00e3o_dos_workflows_no_n8n",
-      "community": 16,
+      "community": 3,
       "norm_label": "\ud83d\uddc2\ufe0f fase 1: importacao dos workflows no n8n"
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L18",
       "id": "docs_deploy_guide_1_1_criar_pasta_no_n8n",
-      "community": 16,
+      "community": 3,
       "norm_label": "1.1. criar pasta no n8n"
     },
     {
@@ -3474,7 +3474,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L26",
       "id": "docs_deploy_guide_1_2_importar_workflows_em_ordem",
-      "community": 16,
+      "community": 3,
       "norm_label": "1.2. importar workflows (em ordem)"
     },
     {
@@ -3483,7 +3483,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L29",
       "id": "docs_deploy_guide_codeblock_1",
-      "community": 16,
+      "community": 3,
       "norm_label": "code:block1 (/home/user/webapp/automations/automation-email-classifier/n8)"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L59",
       "id": "docs_deploy_guide_1_3_configurar_credenciais_em_cada_workflow",
-      "community": 16,
+      "community": 3,
       "norm_label": "1.3. configurar credenciais em cada workflow"
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L63",
       "id": "docs_deploy_guide_a_gmail_oauth2_workflows_01_e_03",
-      "community": 16,
+      "community": 3,
       "norm_label": "a. gmail oauth2 (workflows 01 e 03)"
     },
     {
@@ -3510,7 +3510,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L74",
       "id": "docs_deploy_guide_b_openai_api_workflow_02",
-      "community": 16,
+      "community": 3,
       "norm_label": "b. openai api (workflow 02)"
     },
     {
@@ -3519,7 +3519,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L84",
       "id": "docs_deploy_guide_c_postgresql_todos_os_workflows",
-      "community": 16,
+      "community": 3,
       "norm_label": "c. postgresql (todos os workflows)"
     },
     {
@@ -3528,7 +3528,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L96",
       "id": "docs_deploy_guide_d_osticket_api_workflows_04_e_05",
-      "community": 16,
+      "community": 3,
       "norm_label": "d. osticket api (workflows 04 e 05)"
     },
     {
@@ -3771,7 +3771,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L373",
       "id": "docs_deploy_guide_4_1_teste_manual_enviar_email_de_teste",
-      "community": 35,
+      "community": 3,
       "norm_label": "4.1. teste manual - enviar email de teste"
     },
     {
@@ -3780,7 +3780,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L378",
       "id": "docs_deploy_guide_codeblock_13",
-      "community": 35,
+      "community": 3,
       "norm_label": "code:block13 (para: <email-monitorado>@clinfec.com.br)"
     },
     {
@@ -3789,7 +3789,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L386",
       "id": "docs_deploy_guide_codeblock_14",
-      "community": 35,
+      "community": 3,
       "norm_label": "code:block14 (para: <email-monitorado>@clinfec.com.br)"
     },
     {
@@ -3798,7 +3798,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L393",
       "id": "docs_deploy_guide_codeblock_15",
-      "community": 35,
+      "community": 3,
       "norm_label": "code:block15 (para: <email-monitorado>@clinfec.com.br)"
     },
     {
@@ -3816,7 +3816,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L406",
       "id": "docs_deploy_guide_4_3_validar_resultados",
-      "community": 29,
+      "community": 3,
       "norm_label": "4.3. validar resultados"
     },
     {
@@ -3825,7 +3825,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L408",
       "id": "docs_deploy_guide_no_postgresql",
-      "community": 29,
+      "community": 3,
       "norm_label": "no postgresql:"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L409",
       "id": "docs_deploy_guide_codeblock_16",
-      "community": 29,
+      "community": 3,
       "norm_label": "code:sql (-- ver emails recebidos)"
     },
     {
@@ -3843,7 +3843,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L442",
       "id": "docs_deploy_guide_no_osticket",
-      "community": 29,
+      "community": 3,
       "norm_label": "no osticket:"
     },
     {
@@ -3852,7 +3852,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L449",
       "id": "docs_deploy_guide_no_n8n",
-      "community": 29,
+      "community": 3,
       "norm_label": "no n8n:"
     },
     {
@@ -3861,7 +3861,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L455",
       "id": "docs_deploy_guide_no_metabase",
-      "community": 29,
+      "community": 3,
       "norm_label": "no metabase:"
     },
     {
@@ -3870,7 +3870,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L464",
       "id": "docs_deploy_guide_fase_5_monitoramento_cont\u00ednuo",
-      "community": 25,
+      "community": 3,
       "norm_label": "\ud83d\udcc8 fase 5: monitoramento continuo"
     },
     {
@@ -3879,7 +3879,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L466",
       "id": "docs_deploy_guide_5_1_checklist_di\u00e1rio",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.1. checklist diario"
     },
     {
@@ -3888,7 +3888,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L477",
       "id": "docs_deploy_guide_5_2_alertas_autom\u00e1ticos",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.2. alertas automaticos"
     },
     {
@@ -3897,7 +3897,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L487",
       "id": "docs_deploy_guide_5_3_queries_\u00fateis_de_monitoramento",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.3. queries uteis de monitoramento"
     },
     {
@@ -3906,7 +3906,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L489",
       "id": "docs_deploy_guide_codeblock_17",
-      "community": 25,
+      "community": 3,
       "norm_label": "code:sql (-- dashboard de saude do sistema)"
     },
     {
@@ -3996,7 +3996,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L651",
       "id": "docs_deploy_guide_checklist_final_de_deploy",
-      "community": 30,
+      "community": 3,
       "norm_label": "\u2705 checklist final de deploy"
     },
     {
@@ -4005,7 +4005,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L655",
       "id": "docs_deploy_guide_infraestrutura",
-      "community": 30,
+      "community": 3,
       "norm_label": "infraestrutura"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L662",
       "id": "docs_deploy_guide_n8n_workflows",
-      "community": 30,
+      "community": 3,
       "norm_label": "n8n workflows"
     },
     {
@@ -4023,7 +4023,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L673",
       "id": "docs_deploy_guide_testes",
-      "community": 30,
+      "community": 3,
       "norm_label": "testes"
     },
     {
@@ -4032,7 +4032,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L680",
       "id": "docs_deploy_guide_metabase",
-      "community": 30,
+      "community": 3,
       "norm_label": "metabase"
     },
     {
@@ -4041,7 +4041,7 @@
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L687",
       "id": "docs_deploy_guide_monitoramento",
-      "community": 30,
+      "community": 3,
       "norm_label": "monitoramento"
     },
     {
@@ -4241,6 +4241,294 @@
       "id": "workflows_workflows_specification_m\u00e9tricas_de_sucesso",
       "community": 6,
       "norm_label": "\ud83d\udcca metricas de sucesso"
+    },
+    {
+      "label": "skills.md",
+      "file_type": "document",
+      "source_file": ".claude/skills.md",
+      "source_location": "L1",
+      "id": "claude_skills_md",
+      "community": 29,
+      "norm_label": "skills.md"
+    },
+    {
+      "label": "Skills aplicaveis (Genericas)",
+      "file_type": "document",
+      "source_file": ".claude/skills.md",
+      "source_location": "L1",
+      "id": "claude_skills_skills_aplicaveis_genericas",
+      "community": 29,
+      "norm_label": "skills aplicaveis (genericas)"
+    },
+    {
+      "label": "Basais (sempre)",
+      "file_type": "document",
+      "source_file": ".claude/skills.md",
+      "source_location": "L3",
+      "id": "claude_skills_basais_sempre",
+      "community": 29,
+      "norm_label": "basais (sempre)"
+    },
+    {
+      "label": "Condicionais",
+      "file_type": "document",
+      "source_file": ".claude/skills.md",
+      "source_location": "L10",
+      "id": "claude_skills_condicionais",
+      "community": 29,
+      "norm_label": "condicionais"
+    },
+    {
+      "label": "Padroes obrigatorios",
+      "file_type": "document",
+      "source_file": ".claude/skills.md",
+      "source_location": "L14",
+      "id": "claude_skills_padroes_obrigatorios",
+      "community": 29,
+      "norm_label": "padroes obrigatorios"
+    },
+    {
+      "label": "prompts.md",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L1",
+      "id": "claude_prompts_md",
+      "community": 10,
+      "norm_label": "prompts.md"
+    },
+    {
+      "label": "Prompts e Templates - fmunizmcorp/automation-email-classifier",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L1",
+      "id": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "community": 10,
+      "norm_label": "prompts e templates - fmunizmcorp/automation-email-classifier"
+    },
+    {
+      "label": "Template 1: Comeco de sessao",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L6",
+      "id": "claude_prompts_template_1_comeco_de_sessao",
+      "community": 10,
+      "norm_label": "template 1: comeco de sessao"
+    },
+    {
+      "label": "code:block1 (Trabalhando em fmunizmcorp/automation-email-classifier. Como)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L8",
+      "id": "claude_prompts_codeblock_1",
+      "community": 10,
+      "norm_label": "code:block1 (trabalhando em fmunizmcorp/automation-email-classifier. como)"
+    },
+    {
+      "label": "Template 2: Implementacao de feature",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L17",
+      "id": "claude_prompts_template_2_implementacao_de_feature",
+      "community": 10,
+      "norm_label": "template 2: implementacao de feature"
+    },
+    {
+      "label": "code:block2 (Feature nova em fmunizmcorp/automation-email-classifier: <DE)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L19",
+      "id": "claude_prompts_codeblock_2",
+      "community": 10,
+      "norm_label": "code:block2 (feature nova em fmunizmcorp/automation-email-classifier: <de)"
+    },
+    {
+      "label": "Template 3: Bug fix",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L34",
+      "id": "claude_prompts_template_3_bug_fix",
+      "community": 10,
+      "norm_label": "template 3: bug fix"
+    },
+    {
+      "label": "code:block3 (Bug em fmunizmcorp/automation-email-classifier: <DESCRICAO +)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L36",
+      "id": "claude_prompts_codeblock_3",
+      "community": 10,
+      "norm_label": "code:block3 (bug em fmunizmcorp/automation-email-classifier: <descricao +)"
+    },
+    {
+      "label": "Template 4: Auditoria/revisao",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L48",
+      "id": "claude_prompts_template_4_auditoria_revisao",
+      "community": 10,
+      "norm_label": "template 4: auditoria/revisao"
+    },
+    {
+      "label": "code:block4 (Auditoria em fmunizmcorp/automation-email-classifier: <ESCOP)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L50",
+      "id": "claude_prompts_codeblock_4",
+      "community": 10,
+      "norm_label": "code:block4 (auditoria em fmunizmcorp/automation-email-classifier: <escop)"
+    },
+    {
+      "label": "Template 5: Deploy e validacao",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L63",
+      "id": "claude_prompts_template_5_deploy_e_validacao",
+      "community": 10,
+      "norm_label": "template 5: deploy e validacao"
+    },
+    {
+      "label": "code:block5 (Deploy em fmunizmcorp/automation-email-classifier: versao <X)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L65",
+      "id": "claude_prompts_codeblock_5",
+      "community": 10,
+      "norm_label": "code:block5 (deploy em fmunizmcorp/automation-email-classifier: versao <x)"
+    },
+    {
+      "label": "Template 7: Atualizacao de skills",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L80",
+      "id": "claude_prompts_template_7_atualizacao_de_skills",
+      "community": 10,
+      "norm_label": "template 7: atualizacao de skills"
+    },
+    {
+      "label": "code:block6 (Descobri novo padrao em fmunizmcorp/automation-email-classif)",
+      "file_type": "document",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L82",
+      "id": "claude_prompts_codeblock_6",
+      "community": 10,
+      "norm_label": "code:block6 (descobri novo padrao em fmunizmcorp/automation-email-classif)"
+    },
+    {
+      "label": "orquestrador.md",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L1",
+      "id": "claude_orquestrador_md",
+      "community": 16,
+      "norm_label": "orquestrador.md"
+    },
+    {
+      "label": "Orquestrador - fmunizmcorp/automation-email-classifier",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L1",
+      "id": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "community": 16,
+      "norm_label": "orquestrador - fmunizmcorp/automation-email-classifier"
+    },
+    {
+      "label": "Persona",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L3",
+      "id": "claude_orquestrador_persona",
+      "community": 16,
+      "norm_label": "persona"
+    },
+    {
+      "label": "Missao",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L7",
+      "id": "claude_orquestrador_missao",
+      "community": 16,
+      "norm_label": "missao"
+    },
+    {
+      "label": "Dominio de atuacao",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L11",
+      "id": "claude_orquestrador_dominio_de_atuacao",
+      "community": 16,
+      "norm_label": "dominio de atuacao"
+    },
+    {
+      "label": "Stack",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L15",
+      "id": "claude_orquestrador_stack",
+      "community": 16,
+      "norm_label": "stack"
+    },
+    {
+      "label": "Criticidade",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L19",
+      "id": "claude_orquestrador_criticidade",
+      "community": 16,
+      "norm_label": "criticidade"
+    },
+    {
+      "label": "Squad sob sua coordenacao",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L23",
+      "id": "claude_orquestrador_squad_sob_sua_coordenacao",
+      "community": 16,
+      "norm_label": "squad sob sua coordenacao"
+    },
+    {
+      "label": "Sempre disponiveis (basais)",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L25",
+      "id": "claude_orquestrador_sempre_disponiveis_basais",
+      "community": 16,
+      "norm_label": "sempre disponiveis (basais)"
+    },
+    {
+      "label": "Especialistas deste projeto",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L33",
+      "id": "claude_orquestrador_especialistas_deste_projeto",
+      "community": 16,
+      "norm_label": "especialistas deste projeto"
+    },
+    {
+      "label": "Triggers de skills (quando aplicar cada uma)",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L38",
+      "id": "claude_orquestrador_triggers_de_skills_quando_aplicar_cada_uma",
+      "community": 16,
+      "norm_label": "triggers de skills (quando aplicar cada uma)"
+    },
+    {
+      "label": "Decisoes que voce (orquestrador) toma",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L48",
+      "id": "claude_orquestrador_decisoes_que_voce_orquestrador_toma",
+      "community": 16,
+      "norm_label": "decisoes que voce (orquestrador) toma"
+    },
+    {
+      "label": "Decisoes que NAO sao suas",
+      "file_type": "document",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L57",
+      "id": "claude_orquestrador_decisoes_que_nao_sao_suas",
+      "community": 16,
+      "norm_label": "decisoes que nao sao suas"
     },
     {
       "label": "\ud83d\udce7 Automa\u00e7\u00e3o: Email Classifier com IA",
@@ -4625,7 +4913,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L190",
-      "community": 10,
+      "community": 2,
       "norm_label": "\ud83d\udcca passo 3: configuracao do metabase",
       "id": "docs_setup_passo_3_configura_o_do_metabase"
     },
@@ -4634,7 +4922,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L225",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 2: classificacoes",
       "id": "docs_setup_dashboard_2_classifica_es"
     },
@@ -4643,7 +4931,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L252",
-      "community": 10,
+      "community": 2,
       "norm_label": "dashboard 5: gestao de spam",
       "id": "docs_setup_dashboard_5_gest_o_de_spam"
     },
@@ -4652,7 +4940,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L274",
-      "community": 2,
+      "community": 25,
       "norm_label": "4.1 teste de conexoes",
       "id": "docs_setup_4_1_teste_de_conex_es"
     },
@@ -4751,7 +5039,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L16",
-      "community": 16,
+      "community": 3,
       "norm_label": "\ud83d\uddc2\ufe0f fase 1: importacao dos workflows no n8n",
       "id": "docs_deploy_guide_fase_1_importa_o_dos_workflows_no_n8n"
     },
@@ -4814,7 +5102,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L464",
-      "community": 25,
+      "community": 3,
       "norm_label": "\ud83d\udcc8 fase 5: monitoramento continuo",
       "id": "docs_deploy_guide_fase_5_monitoramento_cont_nuo"
     },
@@ -4823,7 +5111,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L466",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.1. checklist diario",
       "id": "docs_deploy_guide_5_1_checklist_di_rio"
     },
@@ -4832,7 +5120,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L477",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.2. alertas automaticos",
       "id": "docs_deploy_guide_5_2_alertas_autom_ticos"
     },
@@ -4841,7 +5129,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L487",
-      "community": 25,
+      "community": 3,
       "norm_label": "5.3. queries uteis de monitoramento",
       "id": "docs_deploy_guide_5_3_queries_teis_de_monitoramento"
     },
@@ -5006,9 +5294,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_name",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_name"
     },
     {
       "relation": "contains",
@@ -5016,9 +5304,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_nodes"
     },
     {
       "relation": "contains",
@@ -5026,9 +5314,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_connections",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections"
     },
     {
       "relation": "contains",
@@ -5036,9 +5324,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_settings",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_settings"
     },
     {
       "relation": "contains",
@@ -5046,9 +5334,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_staticdata"
     },
     {
       "relation": "contains",
@@ -5056,9 +5344,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_tags",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_tags"
     },
     {
       "relation": "contains",
@@ -5066,9 +5354,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_triggercount"
     },
     {
       "relation": "contains",
@@ -5076,9 +5364,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_updatedat"
     },
     {
       "relation": "contains",
@@ -5086,9 +5374,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_json",
-      "target": "workflows_01_email_reader_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_versionid"
     },
     {
       "relation": "contains",
@@ -5096,9 +5384,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections",
-      "target": "workflows_01_email_reader_connections_gmail_trigger",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections_gmail_trigger"
     },
     {
       "relation": "contains",
@@ -5106,9 +5394,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections",
-      "target": "workflows_01_email_reader_connections_postgresql_insert_email",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections_postgresql_insert_email"
     },
     {
       "relation": "contains",
@@ -5116,9 +5404,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections",
-      "target": "workflows_01_email_reader_connections_gmail_mark_as_processed",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections_gmail_mark_as_processed"
     },
     {
       "relation": "contains",
@@ -5126,9 +5414,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections",
-      "target": "workflows_01_email_reader_connections_http_request_ai_classifier",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections_http_request_ai_classifier"
     },
     {
       "relation": "contains",
@@ -5136,9 +5424,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections",
-      "target": "workflows_01_email_reader_connections_check_success",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_connections_check_success"
     },
     {
       "relation": "contains",
@@ -5146,9 +5434,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections_gmail_trigger",
-      "target": "workflows_01_email_reader_gmail_trigger_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_gmail_trigger_main"
     },
     {
       "relation": "contains",
@@ -5156,9 +5444,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections_postgresql_insert_email",
-      "target": "workflows_01_email_reader_postgresql_insert_email_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_postgresql_insert_email_main"
     },
     {
       "relation": "contains",
@@ -5166,9 +5454,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections_gmail_mark_as_processed",
-      "target": "workflows_01_email_reader_gmail_mark_as_processed_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_gmail_mark_as_processed_main"
     },
     {
       "relation": "contains",
@@ -5176,9 +5464,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections_http_request_ai_classifier",
-      "target": "workflows_01_email_reader_http_request_ai_classifier_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_http_request_ai_classifier_main"
     },
     {
       "relation": "contains",
@@ -5186,9 +5474,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_connections_check_success",
-      "target": "workflows_01_email_reader_check_success_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_check_success_main"
     },
     {
       "relation": "contains",
@@ -5196,9 +5484,9 @@
       "source_file": "n8n/workflows/01_Email_Reader.json",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_settings",
-      "target": "workflows_01_email_reader_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -5206,9 +5494,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_name"
     },
     {
       "relation": "contains",
@@ -5216,9 +5504,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_nodes"
     },
     {
       "relation": "contains",
@@ -5226,9 +5514,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections"
     },
     {
       "relation": "contains",
@@ -5236,9 +5524,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_settings"
     },
     {
       "relation": "contains",
@@ -5246,9 +5534,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_staticdata"
     },
     {
       "relation": "contains",
@@ -5256,9 +5544,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_tags"
     },
     {
       "relation": "contains",
@@ -5266,9 +5554,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_triggercount"
     },
     {
       "relation": "contains",
@@ -5276,9 +5564,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_updatedat"
     },
     {
       "relation": "contains",
@@ -5286,9 +5574,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_02_ai_classifier_production_json",
-      "target": "workflows_02_ai_classifier_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_versionid"
     },
     {
       "relation": "contains",
@@ -5296,9 +5584,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_every_30_seconds",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_every_30_seconds"
     },
     {
       "relation": "contains",
@@ -5306,9 +5594,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_get_pending_emails",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_get_pending_emails"
     },
     {
       "relation": "contains",
@@ -5316,9 +5604,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_has_emails",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_has_emails"
     },
     {
       "relation": "contains",
@@ -5326,9 +5614,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_openai_classify_email",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_openai_classify_email"
     },
     {
       "relation": "contains",
@@ -5336,9 +5624,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_parse_classification",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_parse_classification"
     },
     {
       "relation": "contains",
@@ -5346,9 +5634,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_save_classification",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_save_classification"
     },
     {
       "relation": "contains",
@@ -5356,9 +5644,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_update_email_status",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_update_email_status"
     },
     {
       "relation": "contains",
@@ -5366,9 +5654,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections",
-      "target": "workflows_02_ai_classifier_production_connections_is_spam",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_connections_is_spam"
     },
     {
       "relation": "contains",
@@ -5376,9 +5664,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_every_30_seconds",
-      "target": "workflows_02_ai_classifier_production_every_30_seconds_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_every_30_seconds_main"
     },
     {
       "relation": "contains",
@@ -5386,9 +5674,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_get_pending_emails",
-      "target": "workflows_02_ai_classifier_production_get_pending_emails_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_get_pending_emails_main"
     },
     {
       "relation": "contains",
@@ -5396,9 +5684,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_has_emails",
-      "target": "workflows_02_ai_classifier_production_has_emails_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_has_emails_main"
     },
     {
       "relation": "contains",
@@ -5406,9 +5694,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_openai_classify_email",
-      "target": "workflows_02_ai_classifier_production_openai_classify_email_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_openai_classify_email_main"
     },
     {
       "relation": "contains",
@@ -5416,9 +5704,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_parse_classification",
-      "target": "workflows_02_ai_classifier_production_parse_classification_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_parse_classification_main"
     },
     {
       "relation": "contains",
@@ -5426,9 +5714,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_save_classification",
-      "target": "workflows_02_ai_classifier_production_save_classification_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_save_classification_main"
     },
     {
       "relation": "contains",
@@ -5436,9 +5724,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_update_email_status",
-      "target": "workflows_02_ai_classifier_production_update_email_status_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_update_email_status_main"
     },
     {
       "relation": "contains",
@@ -5446,9 +5734,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_connections_is_spam",
-      "target": "workflows_02_ai_classifier_production_is_spam_main",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_is_spam_main"
     },
     {
       "relation": "contains",
@@ -5456,9 +5744,9 @@
       "source_file": "n8n/workflows/02_AI_Classifier_PRODUCTION.json",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_02_ai_classifier_production_settings",
-      "target": "workflows_02_ai_classifier_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_02_ai_classifier_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -5466,9 +5754,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_name"
     },
     {
       "relation": "contains",
@@ -5476,9 +5764,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_nodes"
     },
     {
       "relation": "contains",
@@ -5486,9 +5774,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections"
     },
     {
       "relation": "contains",
@@ -5496,9 +5784,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_settings"
     },
     {
       "relation": "contains",
@@ -5506,9 +5794,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_staticdata"
     },
     {
       "relation": "contains",
@@ -5516,9 +5804,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_tags"
     },
     {
       "relation": "contains",
@@ -5526,9 +5814,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_triggercount"
     },
     {
       "relation": "contains",
@@ -5536,9 +5824,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_updatedat"
     },
     {
       "relation": "contains",
@@ -5546,9 +5834,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_06_dashboard_alerts_production_json",
-      "target": "workflows_06_dashboard_alerts_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_versionid"
     },
     {
       "relation": "contains",
@@ -5556,9 +5844,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_every_10_minutes",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_every_10_minutes"
     },
     {
       "relation": "contains",
@@ -5566,9 +5854,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_check_sla_violations",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_check_sla_violations"
     },
     {
       "relation": "contains",
@@ -5576,9 +5864,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_check_pending_spam_approvals",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_check_pending_spam_approvals"
     },
     {
       "relation": "contains",
@@ -5586,9 +5874,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_check_classification_errors",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_check_classification_errors"
     },
     {
       "relation": "contains",
@@ -5596,9 +5884,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_consolidate_alerts",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_consolidate_alerts"
     },
     {
       "relation": "contains",
@@ -5606,9 +5894,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections",
-      "target": "workflows_06_dashboard_alerts_production_connections_has_real_alerts",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_connections_has_real_alerts"
     },
     {
       "relation": "contains",
@@ -5616,9 +5904,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_every_10_minutes",
-      "target": "workflows_06_dashboard_alerts_production_every_10_minutes_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_every_10_minutes_main"
     },
     {
       "relation": "contains",
@@ -5626,9 +5914,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_check_sla_violations",
-      "target": "workflows_06_dashboard_alerts_production_check_sla_violations_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_check_sla_violations_main"
     },
     {
       "relation": "contains",
@@ -5636,9 +5924,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_check_pending_spam_approvals",
-      "target": "workflows_06_dashboard_alerts_production_check_pending_spam_approvals_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_check_pending_spam_approvals_main"
     },
     {
       "relation": "contains",
@@ -5646,9 +5934,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_check_classification_errors",
-      "target": "workflows_06_dashboard_alerts_production_check_classification_errors_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_check_classification_errors_main"
     },
     {
       "relation": "contains",
@@ -5656,9 +5944,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_consolidate_alerts",
-      "target": "workflows_06_dashboard_alerts_production_consolidate_alerts_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_consolidate_alerts_main"
     },
     {
       "relation": "contains",
@@ -5666,9 +5954,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_connections_has_real_alerts",
-      "target": "workflows_06_dashboard_alerts_production_has_real_alerts_main",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_has_real_alerts_main"
     },
     {
       "relation": "contains",
@@ -5676,9 +5964,9 @@
       "source_file": "n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_06_dashboard_alerts_production_settings",
-      "target": "workflows_06_dashboard_alerts_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_06_dashboard_alerts_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -5686,9 +5974,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_name"
     },
     {
       "relation": "contains",
@@ -5696,9 +5984,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_nodes"
     },
     {
       "relation": "contains",
@@ -5706,9 +5994,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections"
     },
     {
       "relation": "contains",
@@ -5716,9 +6004,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_settings"
     },
     {
       "relation": "contains",
@@ -5726,9 +6014,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_staticdata"
     },
     {
       "relation": "contains",
@@ -5736,9 +6024,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_tags"
     },
     {
       "relation": "contains",
@@ -5746,9 +6034,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_triggercount"
     },
     {
       "relation": "contains",
@@ -5756,9 +6044,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_updatedat"
     },
     {
       "relation": "contains",
@@ -5766,9 +6054,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_04_client_ticket_creator_production_json",
-      "target": "workflows_04_client_ticket_creator_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_versionid"
     },
     {
       "relation": "contains",
@@ -5776,9 +6064,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_every_45_seconds",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_every_45_seconds"
     },
     {
       "relation": "contains",
@@ -5786,9 +6074,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_get_client_emails_needing_tickets",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_get_client_emails_needing_tickets"
     },
     {
       "relation": "contains",
@@ -5796,9 +6084,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_has_emails",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_has_emails"
     },
     {
       "relation": "contains",
@@ -5806,9 +6094,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_prepare_ticket_data",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_prepare_ticket_data"
     },
     {
       "relation": "contains",
@@ -5816,9 +6104,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_create_osticket_ticket",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_create_osticket_ticket"
     },
     {
       "relation": "contains",
@@ -5826,9 +6114,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_parse_ticket_response",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_parse_ticket_response"
     },
     {
       "relation": "contains",
@@ -5836,9 +6124,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections",
-      "target": "workflows_04_client_ticket_creator_production_connections_save_ticket_to_database",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_connections_save_ticket_to_database"
     },
     {
       "relation": "contains",
@@ -5846,9 +6134,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_every_45_seconds",
-      "target": "workflows_04_client_ticket_creator_production_every_45_seconds_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_every_45_seconds_main"
     },
     {
       "relation": "contains",
@@ -5856,9 +6144,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_get_client_emails_needing_tickets",
-      "target": "workflows_04_client_ticket_creator_production_get_client_emails_needing_tickets_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_get_client_emails_needing_tickets_main"
     },
     {
       "relation": "contains",
@@ -5866,9 +6154,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_has_emails",
-      "target": "workflows_04_client_ticket_creator_production_has_emails_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_has_emails_main"
     },
     {
       "relation": "contains",
@@ -5876,9 +6164,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_prepare_ticket_data",
-      "target": "workflows_04_client_ticket_creator_production_prepare_ticket_data_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_prepare_ticket_data_main"
     },
     {
       "relation": "contains",
@@ -5886,9 +6174,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_create_osticket_ticket",
-      "target": "workflows_04_client_ticket_creator_production_create_osticket_ticket_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_create_osticket_ticket_main"
     },
     {
       "relation": "contains",
@@ -5896,9 +6184,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_parse_ticket_response",
-      "target": "workflows_04_client_ticket_creator_production_parse_ticket_response_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_parse_ticket_response_main"
     },
     {
       "relation": "contains",
@@ -5906,9 +6194,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_connections_save_ticket_to_database",
-      "target": "workflows_04_client_ticket_creator_production_save_ticket_to_database_main",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_save_ticket_to_database_main"
     },
     {
       "relation": "contains",
@@ -5916,9 +6204,9 @@
       "source_file": "n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_04_client_ticket_creator_production_settings",
-      "target": "workflows_04_client_ticket_creator_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_04_client_ticket_creator_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -5926,9 +6214,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_name"
     },
     {
       "relation": "contains",
@@ -5936,9 +6224,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_nodes"
     },
     {
       "relation": "contains",
@@ -5946,9 +6234,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections"
     },
     {
       "relation": "contains",
@@ -5956,9 +6244,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_settings"
     },
     {
       "relation": "contains",
@@ -5966,9 +6254,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_staticdata"
     },
     {
       "relation": "contains",
@@ -5976,9 +6264,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_tags"
     },
     {
       "relation": "contains",
@@ -5986,9 +6274,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_triggercount"
     },
     {
       "relation": "contains",
@@ -5996,9 +6284,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_updatedat"
     },
     {
       "relation": "contains",
@@ -6006,9 +6294,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_03_spam_manager_production_json",
-      "target": "workflows_03_spam_manager_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_versionid"
     },
     {
       "relation": "contains",
@@ -6016,9 +6304,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_every_5_minutes",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_every_5_minutes"
     },
     {
       "relation": "contains",
@@ -6026,9 +6314,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_get_pending_spam",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_get_pending_spam"
     },
     {
       "relation": "contains",
@@ -6036,9 +6324,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_has_spam_to_process",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_has_spam_to_process"
     },
     {
       "relation": "contains",
@@ -6046,9 +6334,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_auto_approval_logic",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_auto_approval_logic"
     },
     {
       "relation": "contains",
@@ -6056,9 +6344,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_should_auto_approve",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_should_auto_approve"
     },
     {
       "relation": "contains",
@@ -6066,9 +6354,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_auto_approve_spam",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_auto_approve_spam"
     },
     {
       "relation": "contains",
@@ -6076,9 +6364,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections",
-      "target": "workflows_03_spam_manager_production_connections_mark_as_spam_in_gmail",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_connections_mark_as_spam_in_gmail"
     },
     {
       "relation": "contains",
@@ -6086,9 +6374,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_every_5_minutes",
-      "target": "workflows_03_spam_manager_production_every_5_minutes_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_every_5_minutes_main"
     },
     {
       "relation": "contains",
@@ -6096,9 +6384,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_get_pending_spam",
-      "target": "workflows_03_spam_manager_production_get_pending_spam_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_get_pending_spam_main"
     },
     {
       "relation": "contains",
@@ -6106,9 +6394,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_has_spam_to_process",
-      "target": "workflows_03_spam_manager_production_has_spam_to_process_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_has_spam_to_process_main"
     },
     {
       "relation": "contains",
@@ -6116,9 +6404,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_auto_approval_logic",
-      "target": "workflows_03_spam_manager_production_auto_approval_logic_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_auto_approval_logic_main"
     },
     {
       "relation": "contains",
@@ -6126,9 +6414,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_should_auto_approve",
-      "target": "workflows_03_spam_manager_production_should_auto_approve_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_should_auto_approve_main"
     },
     {
       "relation": "contains",
@@ -6136,9 +6424,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_auto_approve_spam",
-      "target": "workflows_03_spam_manager_production_auto_approve_spam_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_auto_approve_spam_main"
     },
     {
       "relation": "contains",
@@ -6146,9 +6434,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_connections_mark_as_spam_in_gmail",
-      "target": "workflows_03_spam_manager_production_mark_as_spam_in_gmail_main",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_mark_as_spam_in_gmail_main"
     },
     {
       "relation": "contains",
@@ -6156,9 +6444,9 @@
       "source_file": "n8n/workflows/03_Spam_Manager_PRODUCTION.json",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_03_spam_manager_production_settings",
-      "target": "workflows_03_spam_manager_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_03_spam_manager_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -6166,9 +6454,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_name"
     },
     {
       "relation": "contains",
@@ -6176,9 +6464,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_nodes"
     },
     {
       "relation": "contains",
@@ -6186,9 +6474,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections"
     },
     {
       "relation": "contains",
@@ -6196,9 +6484,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_settings"
     },
     {
       "relation": "contains",
@@ -6206,9 +6494,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_staticdata"
     },
     {
       "relation": "contains",
@@ -6216,9 +6504,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_tags"
     },
     {
       "relation": "contains",
@@ -6226,9 +6514,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_triggercount"
     },
     {
       "relation": "contains",
@@ -6236,9 +6524,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_updatedat"
     },
     {
       "relation": "contains",
@@ -6246,9 +6534,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_05_admin_ticket_creator_production_json",
-      "target": "workflows_05_admin_ticket_creator_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_versionid"
     },
     {
       "relation": "contains",
@@ -6256,9 +6544,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_every_1_minute",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_every_1_minute"
     },
     {
       "relation": "contains",
@@ -6266,9 +6554,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_get_admin_emails_needing_tickets",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_get_admin_emails_needing_tickets"
     },
     {
       "relation": "contains",
@@ -6276,9 +6564,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_has_admin_emails",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_has_admin_emails"
     },
     {
       "relation": "contains",
@@ -6286,9 +6574,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_prepare_admin_ticket_data",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_prepare_admin_ticket_data"
     },
     {
       "relation": "contains",
@@ -6296,9 +6584,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_create_admin_osticket",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_create_admin_osticket"
     },
     {
       "relation": "contains",
@@ -6306,9 +6594,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_parse_admin_ticket_response",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_parse_admin_ticket_response"
     },
     {
       "relation": "contains",
@@ -6316,9 +6604,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections",
-      "target": "workflows_05_admin_ticket_creator_production_connections_save_admin_ticket_to_db",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_connections_save_admin_ticket_to_db"
     },
     {
       "relation": "contains",
@@ -6326,9 +6614,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_every_1_minute",
-      "target": "workflows_05_admin_ticket_creator_production_every_1_minute_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_every_1_minute_main"
     },
     {
       "relation": "contains",
@@ -6336,9 +6624,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_get_admin_emails_needing_tickets",
-      "target": "workflows_05_admin_ticket_creator_production_get_admin_emails_needing_tickets_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_get_admin_emails_needing_tickets_main"
     },
     {
       "relation": "contains",
@@ -6346,9 +6634,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_has_admin_emails",
-      "target": "workflows_05_admin_ticket_creator_production_has_admin_emails_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_has_admin_emails_main"
     },
     {
       "relation": "contains",
@@ -6356,9 +6644,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_prepare_admin_ticket_data",
-      "target": "workflows_05_admin_ticket_creator_production_prepare_admin_ticket_data_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_prepare_admin_ticket_data_main"
     },
     {
       "relation": "contains",
@@ -6366,9 +6654,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_create_admin_osticket",
-      "target": "workflows_05_admin_ticket_creator_production_create_admin_osticket_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_create_admin_osticket_main"
     },
     {
       "relation": "contains",
@@ -6376,9 +6664,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_parse_admin_ticket_response",
-      "target": "workflows_05_admin_ticket_creator_production_parse_admin_ticket_response_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_parse_admin_ticket_response_main"
     },
     {
       "relation": "contains",
@@ -6386,9 +6674,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_connections_save_admin_ticket_to_db",
-      "target": "workflows_05_admin_ticket_creator_production_save_admin_ticket_to_db_main",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_save_admin_ticket_to_db_main"
     },
     {
       "relation": "contains",
@@ -6396,9 +6684,9 @@
       "source_file": "n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_05_admin_ticket_creator_production_settings",
-      "target": "workflows_05_admin_ticket_creator_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_05_admin_ticket_creator_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -6406,9 +6694,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_name",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_name"
     },
     {
       "relation": "contains",
@@ -6416,9 +6704,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_nodes",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_nodes"
     },
     {
       "relation": "contains",
@@ -6426,9 +6714,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_connections",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections"
     },
     {
       "relation": "contains",
@@ -6436,9 +6724,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L195",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_settings",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_settings"
     },
     {
       "relation": "contains",
@@ -6446,9 +6734,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_staticdata",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_staticdata"
     },
     {
       "relation": "contains",
@@ -6456,9 +6744,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_tags",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_tags"
     },
     {
       "relation": "contains",
@@ -6466,9 +6754,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_triggercount",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_triggercount"
     },
     {
       "relation": "contains",
@@ -6476,9 +6764,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_updatedat",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_updatedat"
     },
     {
       "relation": "contains",
@@ -6486,9 +6774,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "n8n_workflows_01_email_reader_production_json",
-      "target": "workflows_01_email_reader_production_versionid",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_versionid"
     },
     {
       "relation": "contains",
@@ -6496,9 +6784,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_every_2_minutes",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_every_2_minutes"
     },
     {
       "relation": "contains",
@@ -6506,9 +6794,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_gmail_get_unread_emails",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_gmail_get_unread_emails"
     },
     {
       "relation": "contains",
@@ -6516,9 +6804,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_transform_email_data",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_transform_email_data"
     },
     {
       "relation": "contains",
@@ -6526,9 +6814,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_postgresql_insert_email",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_postgresql_insert_email"
     },
     {
       "relation": "contains",
@@ -6536,9 +6824,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_if_inserted_successfully",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_if_inserted_successfully"
     },
     {
       "relation": "contains",
@@ -6546,9 +6834,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections",
-      "target": "workflows_01_email_reader_production_connections_mark_as_pending_classification",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_connections_mark_as_pending_classification"
     },
     {
       "relation": "contains",
@@ -6556,9 +6844,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_every_2_minutes",
-      "target": "workflows_01_email_reader_production_every_2_minutes_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_every_2_minutes_main"
     },
     {
       "relation": "contains",
@@ -6566,9 +6854,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_gmail_get_unread_emails",
-      "target": "workflows_01_email_reader_production_gmail_get_unread_emails_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_gmail_get_unread_emails_main"
     },
     {
       "relation": "contains",
@@ -6576,9 +6864,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_transform_email_data",
-      "target": "workflows_01_email_reader_production_transform_email_data_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_transform_email_data_main"
     },
     {
       "relation": "contains",
@@ -6586,9 +6874,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_postgresql_insert_email",
-      "target": "workflows_01_email_reader_production_postgresql_insert_email_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_postgresql_insert_email_main"
     },
     {
       "relation": "contains",
@@ -6596,9 +6884,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_if_inserted_successfully",
-      "target": "workflows_01_email_reader_production_if_inserted_successfully_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_if_inserted_successfully_main"
     },
     {
       "relation": "contains",
@@ -6606,9 +6894,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_connections_mark_as_pending_classification",
-      "target": "workflows_01_email_reader_production_mark_as_pending_classification_main",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_mark_as_pending_classification_main"
     },
     {
       "relation": "contains",
@@ -6616,9 +6904,9 @@
       "source_file": "n8n/workflows/01_Email_Reader_PRODUCTION.json",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "workflows_01_email_reader_production_settings",
-      "target": "workflows_01_email_reader_production_settings_executionorder",
-      "confidence_score": 1.0
+      "target": "workflows_01_email_reader_production_settings_executionorder"
     },
     {
       "relation": "contains",
@@ -10613,6 +10901,296 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_skills_md",
+      "target": "claude_skills_skills_aplicaveis_genericas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_skills_skills_aplicaveis_genericas",
+      "target": "claude_skills_basais_sempre",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "claude_skills_skills_aplicaveis_genericas",
+      "target": "claude_skills_condicionais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "claude_skills_skills_aplicaveis_genericas",
+      "target": "claude_skills_padroes_obrigatorios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_prompts_md",
+      "target": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_1_comeco_de_sessao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_2_implementacao_de_feature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_3_bug_fix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_4_auditoria_revisao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_5_deploy_e_validacao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "claude_prompts_prompts_e_templates_fmunizmcorp_automation_email_classifier",
+      "target": "claude_prompts_template_7_atualizacao_de_skills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_prompts_template_1_comeco_de_sessao",
+      "target": "claude_prompts_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_prompts_template_2_implementacao_de_feature",
+      "target": "claude_prompts_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "claude_prompts_template_3_bug_fix",
+      "target": "claude_prompts_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "claude_prompts_template_4_auditoria_revisao",
+      "target": "claude_prompts_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "claude_prompts_template_5_deploy_e_validacao",
+      "target": "claude_prompts_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/prompts.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "claude_prompts_template_7_atualizacao_de_skills",
+      "target": "claude_prompts_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude_orquestrador_md",
+      "target": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_persona",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_missao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_dominio_de_atuacao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_criticidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_squad_sob_sua_coordenacao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_triggers_de_skills_quando_aplicar_cada_uma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_decisoes_que_voce_orquestrador_toma",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "claude_orquestrador_orquestrador_fmunizmcorp_automation_email_classifier",
+      "target": "claude_orquestrador_decisoes_que_nao_sao_suas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "claude_orquestrador_squad_sob_sua_coordenacao",
+      "target": "claude_orquestrador_sempre_disponiveis_basais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/orquestrador.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "claude_orquestrador_squad_sob_sua_coordenacao",
+      "target": "claude_orquestrador_especialistas_deste_projeto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
@@ -11052,5 +11630,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "db7bb00b6124fabf82cf66468fc030ff06080f01"
+  "built_at_commit": "6d4e267ace241d0b417caddd4c06f943677da6df"
 }

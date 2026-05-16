@@ -1,167 +1,187 @@
 {
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/01_Email_Reader.json": {
-    "mtime": 1778835154.954212,
+    "mtime": 1778918883.1409075,
     "ast_hash": "e59da00e3e2190980df5acb7707227e2",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/02_AI_Classifier_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "56063ac840be037b07177b787274d794",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/06_Dashboard_Alerts_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "1c65eaa3a29eca42675df667ce3fefbd",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/04_Client_Ticket_Creator_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "5d6f855a22b85cdb14a3ae44e24d7324",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/03_Spam_Manager_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "9ff216f0f9eca970f03ba587a76e195b",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/05_Admin_Ticket_Creator_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "3b904613a2e8bca1b99db12c239a501b",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/01_Email_Reader_PRODUCTION.json": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "2b23964b5088515d09b522ba84f775ce",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/008_create_chat_history_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "2ac10b72cc06a794227abb5acc20ae39",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/003_create_emails_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "1e2e3c1656db32c8436e75eac4fb58f1",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/001_create_departments_table.sql": {
-    "mtime": 1778835154.9504826,
+    "mtime": 1778918883.1376367,
     "ast_hash": "3d1a33f69afed6bc760b630570679bfb",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/002_create_slas_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "0513e0ab7cb2f6dfccbca7d6d334dfa1",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/007_create_knowledge_base_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "d52269b45ee6e7aaee2bba575830c323",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/005_create_tickets_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "64baf76c02a30cf77c478c3f6433e65b",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/004_create_classifications_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "977a6e9fc77fbebc6cf4e2dbcfc1a378",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/migrations/006_create_spam_approvals_table.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "4c2fefea85c85a1cf173e223ac54e386",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/seeds/001_seed_departments.sql": {
-    "mtime": 1778835154.95055,
+    "mtime": 1778918883.13768,
     "ast_hash": "002d5eb7d15311a03544fe94c54a7da5",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/seeds/002_seed_slas.sql": {
-    "mtime": 1778835154.9509666,
+    "mtime": 1778918883.1380057,
     "ast_hash": "c9a69173fd219992363cbcb3f63fdd84",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_dashboard_overview.sql": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "b14c9f5db25d39e6e774f7219761ac87",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_spam_management.sql": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "4fb2fb69974abeff958ef211580c6790",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_classifications_analysis.sql": {
-    "mtime": 1778835154.9509666,
+    "mtime": 1778918883.1380057,
     "ast_hash": "cc85009e56b1744ee5db353677e85c44",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_sla_performance.sql": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "1a5dcc943ca361e6dbc8a36ad15ccfe2",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_tickets_by_department.sql": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "9413cdeaca9858561947c58264dfc2bf",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/database/views/view_knowledge_base_stats.sql": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "581076711566df63cccff910ddc517c3",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/IMPORT_MANUAL_GUIDE.md": {
-    "mtime": 1778835154.9499145,
+    "mtime": 1778918883.137257,
     "ast_hash": "08753f41cc00759f108545e0fda759b9",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/STATUS_FINAL.md": {
-    "mtime": 1778835154.9499145,
+    "mtime": 1778918883.137257,
     "ast_hash": "226b73fb747f19b6fe389db527e57fbc",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/CLAUDE.md": {
-    "mtime": 1778835154.9499145,
+    "mtime": 1778918883.137257,
     "ast_hash": "b602827fb7b9610fceb9738a3f4c9a73",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/README.md": {
-    "mtime": 1778835154.9499145,
+    "mtime": 1778918883.137257,
     "ast_hash": "eb2f8691ba37aaaf4f0f6c64b4605af1",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/ARCHITECTURE.md": {
-    "mtime": 1778835154.9513893,
+    "mtime": 1778918883.1382537,
     "ast_hash": "fbd0a9d98d8459f0c2c90823b71f2f95",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/SETUP.md": {
-    "mtime": 1778835154.9513893,
+    "mtime": 1778918883.1382537,
     "ast_hash": "ddf8a798d96b5705b45504c2a90ab5e7",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/APRENDIZADOS.md": {
-    "mtime": 1778835154.9510908,
+    "mtime": 1778918883.1380801,
     "ast_hash": "9376c54fd8aad56cf276765be87afa30",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/HISTORICO.md": {
-    "mtime": 1778835154.9513893,
+    "mtime": 1778918883.1382537,
     "ast_hash": "d2614487cb192614c0d690cd44be1754",
     "semantic_hash": ""
   },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/docs/DEPLOY_GUIDE.md": {
-    "mtime": 1778835154.9513893,
+    "mtime": 1778918883.1382537,
     "ast_hash": "3735b9555796fb4a585fdcf4df7dccb1",
     "semantic_hash": ""
   },
+  "/home/runner/work/automation-email-classifier/automation-email-classifier/.github/workflows/graphify.yml": {
+    "mtime": 1778918883.137257,
+    "ast_hash": "3f73f40d0b691c5e97a37ddbe3d87734",
+    "semantic_hash": ""
+  },
   "/home/runner/work/automation-email-classifier/automation-email-classifier/n8n/workflows/WORKFLOWS_SPECIFICATION.md": {
-    "mtime": 1778835154.9543087,
+    "mtime": 1778918883.1409621,
     "ast_hash": "b28952830569a2edd3646ea5b6d56e4c",
+    "semantic_hash": ""
+  },
+  "/home/runner/work/automation-email-classifier/automation-email-classifier/.claude/skills.md": {
+    "mtime": 1778918883.1371815,
+    "ast_hash": "4bb754d14224dc6aca5885643a05468b",
+    "semantic_hash": ""
+  },
+  "/home/runner/work/automation-email-classifier/automation-email-classifier/.claude/prompts.md": {
+    "mtime": 1778918883.1371815,
+    "ast_hash": "bc8d08a189105bba358f43b23cd4cd49",
+    "semantic_hash": ""
+  },
+  "/home/runner/work/automation-email-classifier/automation-email-classifier/.claude/orquestrador.md": {
+    "mtime": 1778918883.1359525,
+    "ast_hash": "1b46bda1c3aab97b6b6a5e7a51bf9459",
     "semantic_hash": ""
   }
 }
