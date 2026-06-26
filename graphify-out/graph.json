@@ -1180,7 +1180,7 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "status_final_instru\u00e7\u00f5es_para_continuar",
-      "community": 15,
+      "community": 30,
       "norm_label": "\ud83c\udf93 instrucoes para continuar"
     },
     {
@@ -1190,7 +1190,7 @@
       "source_location": "L294",
       "_origin": "ast",
       "id": "status_final_1_ler_documenta\u00e7\u00e3o_obrigat\u00f3ria",
-      "community": 15,
+      "community": 30,
       "norm_label": "1. ler documentacao obrigatoria"
     },
     {
@@ -1200,7 +1200,7 @@
       "source_location": "L304",
       "_origin": "ast",
       "id": "status_final_2_executar_setup_manual",
-      "community": 15,
+      "community": 30,
       "norm_label": "2. executar setup manual"
     },
     {
@@ -1210,7 +1210,7 @@
       "source_location": "L314",
       "_origin": "ast",
       "id": "status_final_3_credenciais_necess\u00e1rias",
-      "community": 15,
+      "community": 30,
       "norm_label": "3. credenciais necessarias"
     },
     {
@@ -1220,7 +1220,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "status_final_4_primeira_ativa\u00e7\u00e3o",
-      "community": 15,
+      "community": 30,
       "norm_label": "4. primeira ativacao"
     },
     {
@@ -1750,7 +1750,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "docs_deploy_guide_fase_1_importa\u00e7\u00e3o_dos_workflows_no_n8n",
-      "community": 3,
+      "community": 4,
       "norm_label": "\ud83d\uddc2\ufe0f fase 1: importacao dos workflows no n8n"
     },
     {
@@ -1760,7 +1760,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_1_criar_pasta_no_n8n",
-      "community": 3,
+      "community": 4,
       "norm_label": "1.1. criar pasta no n8n"
     },
     {
@@ -1770,7 +1770,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_2_importar_workflows_em_ordem",
-      "community": 3,
+      "community": 4,
       "norm_label": "1.2. importar workflows (em ordem)"
     },
     {
@@ -1780,7 +1780,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_3_configurar_credenciais_em_cada_workflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "1.3. configurar credenciais em cada workflow"
     },
     {
@@ -1790,7 +1790,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "docs_deploy_guide_a_gmail_oauth2_workflows_01_e_03",
-      "community": 3,
+      "community": 4,
       "norm_label": "a. gmail oauth2 (workflows 01 e 03)"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "docs_deploy_guide_b_openai_api_workflow_02",
-      "community": 3,
+      "community": 4,
       "norm_label": "b. openai api (workflow 02)"
     },
     {
@@ -1810,7 +1810,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "docs_deploy_guide_c_postgresql_todos_os_workflows",
-      "community": 3,
+      "community": 4,
       "norm_label": "c. postgresql (todos os workflows)"
     },
     {
@@ -1820,7 +1820,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "docs_deploy_guide_d_osticket_api_workflows_04_e_05",
-      "community": 3,
+      "community": 4,
       "norm_label": "d. osticket api (workflows 04 e 05)"
     },
     {
@@ -2330,7 +2330,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "docs_setup_passo_1_configura\u00e7\u00e3o_do_postgresql",
-      "community": 13,
+      "community": 5,
       "norm_label": "\ud83d\uddc2\ufe0f passo 1: configuracao do postgresql"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "docs_setup_1_1_verificar_schema",
-      "community": 13,
+      "community": 5,
       "norm_label": "1.1 verificar schema"
     },
     {
@@ -2350,7 +2350,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "docs_setup_1_2_executar_migrations_se_necess\u00e1rio",
-      "community": 13,
+      "community": 5,
       "norm_label": "1.2 executar migrations (se necessario)"
     },
     {
@@ -2360,7 +2360,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "docs_setup_1_3_executar_seeds",
-      "community": 13,
+      "community": 5,
       "norm_label": "1.3 executar seeds"
     },
     {
@@ -2370,7 +2370,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "docs_setup_1_4_verificar_dados_iniciais",
-      "community": 13,
+      "community": 5,
       "norm_label": "1.4 verificar dados iniciais"
     },
     {
@@ -2967,15 +2967,6 @@
       "id": "n8n_workflows_01_email_reader_production_json"
     },
     {
-      "label": "Guia de Importa\u00e7\u00e3o Manual - Email Classifier",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L1",
-      "community": 36,
-      "norm_label": "guia de importacao manual - email classifier",
-      "id": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier"
-    },
-    {
       "label": "code:sql (-- Conectar via psql)",
       "file_type": "document",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
@@ -2983,42 +2974,6 @@
       "community": 36,
       "norm_label": "code:sql (-- conectar via psql)",
       "id": "automation_email_classifier_import_manual_guide_codeblock_1"
-    },
-    {
-      "label": "\ud83d\udcca CHECKLIST DE VALIDA\u00c7\u00c3O",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L133",
-      "community": 36,
-      "norm_label": "\ud83d\udcca checklist de validacao",
-      "id": "automation_email_classifier_import_manual_guide_checklist_de_valida\u00e7\u00e3o"
-    },
-    {
-      "label": "\ud83d\udd27 RESOLU\u00c7\u00c3O DE PROBLEMAS",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L150",
-      "community": 36,
-      "norm_label": "\ud83d\udd27 resolucao de problemas",
-      "id": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas"
-    },
-    {
-      "label": "\u2705 PR\u00d3XIMOS PASSOS AP\u00d3S ATIVA\u00c7\u00c3O",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L191",
-      "community": 36,
-      "norm_label": "\u2705 proximos passos apos ativacao",
-      "id": "automation_email_classifier_import_manual_guide_pr\u00f3ximos_passos_ap\u00f3s_ativa\u00e7\u00e3o"
-    },
-    {
-      "label": "\u2705 IMPLEMENTA\u00c7\u00c3O COMPLETA (90%)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L3",
-      "community": 30,
-      "norm_label": "\u2705 implementacao completa (90%)",
-      "id": "automation_email_classifier_status_final_implementa\u00e7\u00e3o_completa_90"
     },
     {
       "label": "code:sql (-- Verificar tabelas)",
@@ -3030,15 +2985,6 @@
       "id": "automation_email_classifier_status_final_codeblock_1"
     },
     {
-      "label": "\ud83d\udcc1 ESTRUTURA FINAL DO REPOSIT\u00d3RIO",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L151",
-      "community": 30,
-      "norm_label": "\ud83d\udcc1 estrutura final do repositorio",
-      "id": "automation_email_classifier_status_final_estrutura_final_do_reposit\u00f3rio"
-    },
-    {
       "label": "code:block2 (automation-email-classifier/)",
       "file_type": "document",
       "source_file": "STATUS_FINAL.md",
@@ -3048,85 +2994,13 @@
       "id": "automation_email_classifier_status_final_codeblock_2"
     },
     {
-      "label": "\ud83c\udfaf PR\u00d3XIMOS PASSOS (Manual - 10%)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L202",
-      "community": 30,
-      "norm_label": "\ud83c\udfaf proximos passos (manual - 10%)",
-      "id": "automation_email_classifier_status_final_pr\u00f3ximos_passos_manual_10"
-    },
-    {
-      "label": "\ud83d\udcca M\u00c9TRICAS DE SUCESSO",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L246",
-      "community": 30,
-      "norm_label": "\ud83d\udcca metricas de sucesso",
-      "id": "automation_email_classifier_status_final_m\u00e9tricas_de_sucesso"
-    },
-    {
-      "label": "Implementa\u00e7\u00e3o Manual (Pendente)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L257",
-      "community": 30,
-      "norm_label": "implementacao manual (pendente)",
-      "id": "automation_email_classifier_status_final_implementa\u00e7\u00e3o_manual_pendente"
-    },
-    {
-      "label": "Reposit\u00f3rios",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L274",
-      "community": 30,
-      "norm_label": "repositorios",
-      "id": "automation_email_classifier_status_final_reposit\u00f3rios"
-    },
-    {
-      "label": "Servi\u00e7os",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L278",
-      "community": 30,
-      "norm_label": "servicos",
-      "id": "automation_email_classifier_status_final_servi\u00e7os"
-    },
-    {
-      "label": "\ud83c\udf93 INSTRU\u00c7\u00d5ES PARA CONTINUAR",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L292",
-      "community": 15,
-      "norm_label": "\ud83c\udf93 instrucoes para continuar",
-      "id": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar"
-    },
-    {
       "label": "code:bash (# Ordem de leitura:)",
       "file_type": "document",
       "source_file": "STATUS_FINAL.md",
       "source_location": "L296",
-      "community": 15,
+      "community": 30,
       "norm_label": "code:bash (# ordem de leitura:)",
       "id": "automation_email_classifier_status_final_codeblock_3"
-    },
-    {
-      "label": "3. Credenciais Necess\u00e1rias",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L314",
-      "community": 15,
-      "norm_label": "3. credenciais necessarias",
-      "id": "automation_email_classifier_status_final_3_credenciais_necess\u00e1rias"
-    },
-    {
-      "label": "\ud83c\udf89 CONCLUS\u00c3O",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L386",
-      "community": 30,
-      "norm_label": "\ud83c\udf89 conclusao",
-      "id": "automation_email_classifier_status_final_conclus\u00e3o"
     },
     {
       "label": "code:block1",
@@ -3165,42 +3039,6 @@
       "id": "automation_email_classifier_readme_codeblock_2"
     },
     {
-      "label": "\ud83d\ude80 Status da Implementa\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L98",
-      "community": 37,
-      "norm_label": "\ud83d\ude80 status da implementacao",
-      "id": "automation_email_classifier_readme_status_da_implementa\u00e7\u00e3o"
-    },
-    {
-      "label": "\u2705 Conclu\u00eddo (80%)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L100",
-      "community": 37,
-      "norm_label": "\u2705 concluido (80%)",
-      "id": "automation_email_classifier_readme_conclu\u00eddo_80"
-    },
-    {
-      "label": "\ud83d\udcc5 Hist\u00f3rico",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L184",
-      "community": 37,
-      "norm_label": "\ud83d\udcc5 historico",
-      "id": "automation_email_classifier_readme_hist\u00f3rico"
-    },
-    {
-      "label": "Opera\u00e7\u00e3o Di\u00e1ria",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L230",
-      "community": 37,
-      "norm_label": "operacao diaria",
-      "id": "automation_email_classifier_readme_opera\u00e7\u00e3o_di\u00e1ria"
-    },
-    {
       "label": "code:block1 (automation_email_classifier/)",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
@@ -3232,7 +3070,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L20",
-      "community": 13,
+      "community": 5,
       "norm_label": "code:bash (# conectar ao postgresql)",
       "id": "docs_setup_codeblock_1"
     },
@@ -3241,7 +3079,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L41",
-      "community": 13,
+      "community": 5,
       "norm_label": "code:bash (cd /path/to/automation-email-classifier/database/migrations)",
       "id": "docs_setup_codeblock_2"
     },
@@ -3250,7 +3088,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L53",
-      "community": 13,
+      "community": 5,
       "norm_label": "code:bash (cd /path/to/automation-email-classifier/database/seeds)",
       "id": "docs_setup_codeblock_3"
     },
@@ -3259,7 +3097,7 @@
       "file_type": "document",
       "source_file": "docs/SETUP.md",
       "source_location": "L65",
-      "community": 13,
+      "community": 5,
       "norm_label": "code:sql (-- verificar departamentos)",
       "id": "docs_setup_codeblock_4"
     },
@@ -3286,7 +3124,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L29",
-      "community": 3,
+      "community": 4,
       "norm_label": "code:block1 (/home/user/webapp/automations/automation-email-classifier/n8)",
       "id": "docs_deploy_guide_codeblock_1"
     },
@@ -3334,15 +3172,6 @@
       "community": 7,
       "norm_label": "code:sql (select)",
       "id": "docs_deploy_guide_codeblock_7"
-    },
-    {
-      "label": "code:sql (SELECT)",
-      "file_type": "document",
-      "source_file": "docs/DEPLOY_GUIDE.md",
-      "source_location": "L286",
-      "community": 7,
-      "norm_label": "code:sql (select)",
-      "id": "docs_deploy_guide_codeblock_8"
     },
     {
       "label": "code:sql (SELECT)",
@@ -3505,150 +3334,6 @@
       "community": 10,
       "norm_label": "code:block6 (descobri novo padrao em fmunizmcorp/automation-email-classif)",
       "id": "claude_prompts_codeblock_6"
-    },
-    {
-      "label": "\ud83d\udce7 Automa\u00e7\u00e3o: Email Classifier com IA",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "community": 37,
-      "norm_label": "\ud83d\udce7 automacao: email classifier com ia",
-      "id": "automation_email_classifier_readme_automa_o_email_classifier_com_ia"
-    },
-    {
-      "label": "\ud83d\udccb Descri\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L7",
-      "community": 37,
-      "norm_label": "\ud83d\udccb descricao",
-      "id": "automation_email_classifier_readme_descri_o"
-    },
-    {
-      "label": "\ud83d\udcca M\u00e9tricas Esperadas",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L170",
-      "community": 37,
-      "norm_label": "\ud83d\udcca metricas esperadas",
-      "id": "automation_email_classifier_readme_m_tricas_esperadas"
-    },
-    {
-      "label": "\ud83d\udcdd Pr\u00f3ximos Passos",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "community": 37,
-      "norm_label": "\ud83d\udcdd proximos passos",
-      "id": "automation_email_classifier_readme_pr_ximos_passos"
-    },
-    {
-      "label": "\ud83d\udcca STATUS FINAL - Automa\u00e7\u00e3o Email Classifier",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L1",
-      "community": 30,
-      "norm_label": "\ud83d\udcca status final - automacao email classifier",
-      "id": "automation_email_classifier_status_final_status_final_automa_o_email_classifier"
-    },
-    {
-      "label": "\u2705 FASE 3: N8N Workflows + Documenta\u00e7\u00e3o (100%) - 50 min",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L66",
-      "community": 30,
-      "norm_label": "\u2705 fase 3: n8n workflows + documentacao (100%) - 50 min",
-      "id": "automation_email_classifier_status_final_fase_3_n8n_workflows_documenta_o_100_50_min"
-    },
-    {
-      "label": "FASE 4: Implementa\u00e7\u00e3o Manual (2-3 horas)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L204",
-      "community": 30,
-      "norm_label": "fase 4: implementacao manual (2-3 horas)",
-      "id": "automation_email_classifier_status_final_fase_4_implementa_o_manual_2_3_horas"
-    },
-    {
-      "label": "Implementa\u00e7\u00e3o Autom\u00e1tica (Conclu\u00edda)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L248",
-      "community": 30,
-      "norm_label": "implementacao automatica (concluida)",
-      "id": "automation_email_classifier_status_final_implementa_o_autom_tica_conclu_da"
-    },
-    {
-      "label": "Opera\u00e7\u00e3o (Futuro)",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L263",
-      "community": 30,
-      "norm_label": "operacao (futuro)",
-      "id": "automation_email_classifier_status_final_opera_o_futuro"
-    },
-    {
-      "label": "Documenta\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L284",
-      "community": 30,
-      "norm_label": "documentacao",
-      "id": "automation_email_classifier_status_final_documenta_o"
-    },
-    {
-      "label": "1. Ler Documenta\u00e7\u00e3o Obrigat\u00f3ria",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L294",
-      "community": 15,
-      "norm_label": "1. ler documentacao obrigatoria",
-      "id": "automation_email_classifier_status_final_1_ler_documenta_o_obrigat_ria"
-    },
-    {
-      "label": "4. Primeira Ativa\u00e7\u00e3o",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L322",
-      "community": 15,
-      "norm_label": "4. primeira ativacao",
-      "id": "automation_email_classifier_status_final_4_primeira_ativa_o"
-    },
-    {
-      "label": "Seguran\u00e7a",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L348",
-      "community": 30,
-      "norm_label": "seguranca",
-      "id": "automation_email_classifier_status_final_seguran_a"
-    },
-    {
-      "label": "Ap\u00f3s Ativar",
-      "file_type": "document",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L376",
-      "community": 30,
-      "norm_label": "apos ativar",
-      "id": "automation_email_classifier_status_final_ap_s_ativar"
-    },
-    {
-      "label": "\u26a0\ufe0f SITUA\u00c7\u00c3O ATUAL",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L8",
-      "community": 36,
-      "norm_label": "\u26a0\ufe0f situacao atual",
-      "id": "automation_email_classifier_import_manual_guide_situa_o_atual"
-    },
-    {
-      "label": "5. Teste R\u00e1pido (5 min)",
-      "file_type": "document",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L100",
-      "community": 36,
-      "norm_label": "5. teste rapido (5 min)",
-      "id": "automation_email_classifier_import_manual_guide_5_teste_r_pido_5_min"
     }
   ],
   "links": [
@@ -4276,31 +3961,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide",
-      "target": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
       "source_location": "L133",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
       "target": "import_manual_guide_checklist_de_valida\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_passo_a_passo_completo"
     },
     {
       "relation": "contains",
@@ -4326,11 +3991,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
+      "target": "import_manual_guide_passo_a_passo_completo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "IMPORT_MANUAL_GUIDE.md",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "automation_email_classifier_import_manual_guide_situa_o_atual"
+      "target": "import_manual_guide_situa\u00e7\u00e3o_atual"
     },
     {
       "relation": "contains",
@@ -4346,31 +4021,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L8",
+      "source_location": "L100",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_situa\u00e7\u00e3o_atual"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_situa\u00e7\u00e3o_atual"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_passo_a_passo_completo"
+      "source": "import_manual_guide_passo_a_passo_completo",
+      "target": "import_manual_guide_5_teste_r\u00e1pido_5_min"
     },
     {
       "relation": "contains",
@@ -4411,26 +4066,6 @@
       "confidence_score": 1.0,
       "source": "import_manual_guide_passo_a_passo_completo",
       "target": "import_manual_guide_4_ativar_workflows_2_min"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide_passo_a_passo_completo",
-      "target": "automation_email_classifier_import_manual_guide_5_teste_r_pido_5_min"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide_passo_a_passo_completo",
-      "target": "import_manual_guide_5_teste_r\u00e1pido_5_min"
     },
     {
       "relation": "contains",
@@ -4545,56 +4180,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L152",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas",
-      "target": "import_manual_guide_erro_credential_not_found"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L159",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas",
-      "target": "import_manual_guide_erro_database_connection_failed"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L167",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas",
-      "target": "import_manual_guide_erro_gmail_api_quota_exceeded"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L171",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas",
-      "target": "import_manual_guide_erro_openai_api_error"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L177",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_suporte"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -4606,11 +4191,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L1",
+      "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "readme",
-      "target": "automation_email_classifier_readme_automa_o_email_classifier_com_ia"
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_descri\u00e7\u00e3o"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_m\u00e9tricas_esperadas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_pr\u00f3ximos_passos"
     },
     {
       "relation": "contains",
@@ -4646,16 +4251,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_descri\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L192",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4680,7 +4275,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "automation_email_classifier_readme_hist\u00f3rico"
+      "target": "readme_hist\u00f3rico"
     },
     {
       "relation": "contains",
@@ -4696,51 +4291,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_m\u00e9tricas_esperadas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
       "target": "readme_objetivo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_pr\u00f3ximos_passos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "automation_email_classifier_readme_status_da_implementa\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_hist\u00f3rico"
     },
     {
       "relation": "contains",
@@ -4751,16 +4306,6 @@
       "confidence_score": 1.0,
       "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
       "target": "readme_status_da_implementa\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_objetivo"
     },
     {
       "relation": "contains",
@@ -4776,41 +4321,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_arquitetura"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_estrutura_do_projeto"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L74",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_estrutura_do_projeto",
       "target": "automation_email_classifier_readme_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_status_da_implementa\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -4846,91 +4361,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L149",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_status_da_implementa\u00e7\u00e3o",
-      "target": "readme_em_progresso_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_status_da_implementa\u00e7\u00e3o",
-      "target": "readme_pendente_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L162",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_links_importantes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L178",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_credenciais"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_hist\u00f3rico"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L192",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_equipe"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L207",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "readme_como_usar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L230",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_como_usar",
       "target": "readme_opera\u00e7\u00e3o_di\u00e1ria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L230",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_como_usar",
-      "target": "automation_email_classifier_readme_opera\u00e7\u00e3o_di\u00e1ria"
     },
     {
       "relation": "contains",
@@ -4956,16 +4391,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final",
-      "target": "automation_email_classifier_status_final_status_final_automa_o_email_classifier"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L364",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4980,7 +4405,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_conclus\u00e3o"
+      "target": "status_final_conclus\u00e3o"
     },
     {
       "relation": "contains",
@@ -4991,96 +4416,6 @@
       "confidence_score": 1.0,
       "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
       "target": "status_final_dicas_importantes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_estrutura_final_do_reposit\u00f3rio"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_implementa\u00e7\u00e3o_completa_90"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L292",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L272",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "status_final_links_importantes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L246",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_m\u00e9tricas_de_sucesso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "status_final_o_que_foi_implementado"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L202",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "automation_email_classifier_status_final_pr\u00f3ximos_passos_manual_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L356",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "status_final_suporte"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L386",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
-      "target": "status_final_conclus\u00e3o"
     },
     {
       "relation": "contains",
@@ -5116,11 +4451,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
+      "source_location": "L272",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
+      "target": "status_final_links_importantes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
       "source_location": "L246",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
       "target": "status_final_m\u00e9tricas_de_sucesso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
+      "target": "status_final_o_que_foi_implementado"
     },
     {
       "relation": "contains",
@@ -5136,11 +4491,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L3",
+      "source_location": "L356",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_implementa\u00e7\u00e3o_completa_90"
+      "source": "status_final_status_final_automa\u00e7\u00e3o_email_classifier",
+      "target": "status_final_suporte"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_o_que_foi_implementado",
+      "target": "status_final_fase_3_n8n_workflows_documenta\u00e7\u00e3o_100_50_min"
     },
     {
       "relation": "contains",
@@ -5166,36 +4531,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_o_que_foi_implementado",
-      "target": "automation_email_classifier_status_final_fase_3_n8n_workflows_documenta_o_100_50_min"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_o_que_foi_implementado",
-      "target": "status_final_fase_3_n8n_workflows_documenta\u00e7\u00e3o_100_50_min"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_o_que_foi_implementado"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L52",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5216,61 +4551,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_estrutura_final_do_reposit\u00f3rio"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L204",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_pr\u00f3ximos_passos_manual_10",
-      "target": "automation_email_classifier_status_final_fase_4_implementa_o_manual_2_3_horas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L202",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_pr\u00f3ximos_passos_manual_10"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L204",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_pr\u00f3ximos_passos_manual_10",
       "target": "status_final_fase_4_implementa\u00e7\u00e3o_manual_2_3_horas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L204",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_pr\u00f3ximos_passos_manual_10",
-      "target": "status_final_fase_4_implementa\u00e7\u00e3o_manual_2_3_horas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L248",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_m\u00e9tricas_de_sucesso",
-      "target": "automation_email_classifier_status_final_implementa_o_autom_tica_conclu_da"
     },
     {
       "relation": "contains",
@@ -5286,26 +4571,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L263",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_m\u00e9tricas_de_sucesso",
-      "target": "automation_email_classifier_status_final_opera_o_futuro"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L246",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_m\u00e9tricas_de_sucesso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L248",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5321,36 +4586,6 @@
       "confidence_score": 1.0,
       "source": "status_final_m\u00e9tricas_de_sucesso",
       "target": "status_final_opera\u00e7\u00e3o_futuro"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L248",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_m\u00e9tricas_de_sucesso",
-      "target": "status_final_implementa\u00e7\u00e3o_autom\u00e1tica_conclu\u00edda"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L263",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_m\u00e9tricas_de_sucesso",
-      "target": "status_final_opera\u00e7\u00e3o_futuro"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L284",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_links_importantes",
-      "target": "automation_email_classifier_status_final_documenta_o"
     },
     {
       "relation": "contains",
@@ -5376,61 +4611,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L274",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_links_importantes",
-      "target": "automation_email_classifier_status_final_reposit\u00f3rios"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L278",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_links_importantes",
       "target": "status_final_servi\u00e7os"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L278",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_links_importantes",
-      "target": "automation_email_classifier_status_final_servi\u00e7os"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L272",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_links_importantes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L294",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "automation_email_classifier_status_final_1_ler_documenta_o_obrigat_ria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L304",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "status_final_2_executar_setup_manual"
     },
     {
       "relation": "contains",
@@ -5446,31 +4631,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L322",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "automation_email_classifier_status_final_4_primeira_ativa_o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L292",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_instru\u00e7\u00f5es_para_continuar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L294",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_instru\u00e7\u00f5es_para_continuar",
       "target": "status_final_1_ler_documenta\u00e7\u00e3o_obrigat\u00f3ria"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L304",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
+      "target": "status_final_2_executar_setup_manual"
     },
     {
       "relation": "contains",
@@ -5496,31 +4671,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L294",
+      "source_location": "L348",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "status_final_1_ler_documenta\u00e7\u00e3o_obrigat\u00f3ria"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L304",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "status_final_2_executar_setup_manual"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L322",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "status_final_4_primeira_ativa\u00e7\u00e3o"
+      "source": "status_final_dicas_importantes",
+      "target": "status_final_seguran\u00e7a"
     },
     {
       "relation": "contains",
@@ -5546,66 +4701,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L348",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_dicas_importantes",
-      "target": "automation_email_classifier_status_final_seguran_a"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L348",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_dicas_importantes",
-      "target": "status_final_seguran\u00e7a"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L334",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_dicas_importantes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L356",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_suporte"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L366",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_checklist_final",
-      "target": "status_final_antes_de_ativar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L376",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_checklist_final",
-      "target": "automation_email_classifier_status_final_ap_s_ativar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L376",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5616,21 +4711,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L364",
+      "source_location": "L366",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_checklist_final"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L386",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_status_final_automa_o_email_classifier",
-      "target": "status_final_conclus\u00e3o"
+      "source": "status_final_checklist_final",
+      "target": "status_final_antes_de_ativar"
     },
     {
       "relation": "contains",
@@ -6366,21 +5451,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/DEPLOY_GUIDE.md",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_deploy_guide_dashboard_email_classifier_overview",
-      "target": "docs_deploy_guide_codeblock_6"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L245",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_deploy_guide_dashboard_email_classifier_overview",
       "target": "docs_deploy_guide_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOY_GUIDE.md",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_deploy_guide_dashboard_email_classifier_overview",
+      "target": "docs_deploy_guide_codeblock_6"
     },
     {
       "relation": "contains",
@@ -6400,7 +5485,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_deploy_guide_dashboard_email_classifier_overview",
-      "target": "docs_deploy_guide_codeblock_8"
+      "target": "docs_deploy_guide_codeblock_11"
     },
     {
       "relation": "contains",
@@ -6426,21 +5511,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/DEPLOY_GUIDE.md",
-      "source_location": "L343",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_deploy_guide_dashboard_email_classifier_alertas_e_monitoramento",
-      "target": "docs_deploy_guide_codeblock_12"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L329",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_deploy_guide_dashboard_email_classifier_alertas_e_monitoramento",
       "target": "docs_deploy_guide_codeblock_11"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEPLOY_GUIDE.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_deploy_guide_dashboard_email_classifier_alertas_e_monitoramento",
+      "target": "docs_deploy_guide_codeblock_12"
     },
     {
       "relation": "contains",
@@ -7441,128 +6526,8 @@
       "confidence_score": 1.0,
       "source": "workflows_workflows_specification_credenciais_necess\u00e1rias",
       "target": "workflows_workflows_specification_redis_para_cache"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L133",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "automation_email_classifier_import_manual_guide_checklist_de_valida\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L191",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "automation_email_classifier_import_manual_guide_pr\u00f3ximos_passos_ap\u00f3s_ativa\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "automation_email_classifier_import_manual_guide_resolu\u00e7\u00e3o_de_problemas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L116",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_import_manual_guide_5_teste_r_pido_5_min",
-      "target": "automation_email_classifier_import_manual_guide_codeblock_1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L153",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_estrutura_final_do_reposit\u00f3rio",
-      "target": "automation_email_classifier_status_final_codeblock_2"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_m\u00e9tricas_de_sucesso",
-      "target": "automation_email_classifier_status_final_implementa\u00e7\u00e3o_manual_pendente"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L314",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "automation_email_classifier_status_final_3_credenciais_necess\u00e1rias"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
-      "source_location": "L296",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_status_final_1_ler_documenta_o_obrigat_ria",
-      "target": "automation_email_classifier_status_final_codeblock_3"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_status_da_implementa\u00e7\u00e3o",
-      "target": "automation_email_classifier_readme_conclu\u00eddo_80"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "automation_email_classifier_readme_descri_o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "automation_email_classifier_readme_m_tricas_esperadas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_email_classifier_readme_automa_o_email_classifier_com_ia",
-      "target": "automation_email_classifier_readme_pr_ximos_passos"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4495f271ecce9d73e16369dc0ec80aa38a1cbf89"
+  "built_at_commit": "84e220af87a2bdbe344c06e3b88183aa2107f5d3"
 }
