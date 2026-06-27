@@ -1,16 +1,16 @@
-# Graph Report - automation-email-classifier  (2026-06-26)
+# Graph Report - automation-email-classifier  (2026-06-27)
 
 ## Corpus Check
 - 36 files · ~25,792 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 338 nodes · 319 edges · 29 communities
+- 337 nodes · 318 edges · 29 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `84e220af`
+- Built from commit: `c01a53db`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,11 +72,11 @@ Nodes (10): 3.1 Acessar Metabase, 3.2 Adicionar Database Connection, 3.3 Criar D
 
 ### Community 3 - "Community 3"
 Cohesion: 0.08
-Nodes (23): 2.1. Ordem de Ativação (IMPORTANTE!), 2.2. Como Ativar um Workflow, 2.3. Validação Pós-Ativação, 5.1. Checklist Diário, 5.2. Alertas Automáticos, 5.3. Queries Úteis de Monitoramento, ✅ CHECKLIST FINAL DE DEPLOY, code:sql (-- Dashboard de saúde do sistema) (+15 more)
+Nodes (25): 1.1. Criar Pasta no N8N, 1.2. Importar Workflows (em ordem), 1.3. Configurar Credenciais em Cada Workflow, 5.1. Checklist Diário, 5.2. Alertas Automáticos, 5.3. Queries Úteis de Monitoramento, A. Gmail OAuth2 (Workflows 01 e 03), B. OpenAI API (Workflow 02) (+17 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.22
-Nodes (9): 1.1. Criar Pasta no N8N, 1.2. Importar Workflows (em ordem), 1.3. Configurar Credenciais em Cada Workflow, A. Gmail OAuth2 (Workflows 01 e 03), B. OpenAI API (Workflow 02), C. PostgreSQL (Todos os workflows), code:block1 (/home/user/webapp/automations/automation-email-classifier/n8), D. osTicket API (Workflows 04 e 05) (+1 more)
+Cohesion: 0.29
+Nodes (7): 2.1. Ordem de Ativação (IMPORTANTE!), 2.2. Como Ativar um Workflow, 2.3. Validação Pós-Ativação, code:sql (-- Conectar ao banco), ⚙️ FASE 2: ATIVAÇÃO DOS WORKFLOWS, N8N - Verificar Execuções, PostgreSQL - Verificar Dados
 
 ### Community 5 - "Community 5"
 Cohesion: 0.22
@@ -87,8 +87,8 @@ Cohesion: 0.11
 Nodes (18): code:block1 (Você é um assistente especializado em classificar emails par), code:json ({), 🔐 Credenciais Necessárias, 📋 Especificação Completa dos Workflows N8N, Gmail OAuth2, 📝 Instruções de Importação no N8N, 📊 Métricas de Sucesso, OpenAI (+10 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.14
-Nodes (15): 3.1. Conectar Database ao Metabase (se ainda não conectado), 3.2. Criar Dashboard Principal, 3.3. Criar Dashboard de Alertas, 3.4. Configurar Auto-Refresh, 3.5. Compartilhar Dashboards, code:sql (SELECT), code:sql (SELECT), code:sql (SELECT) (+7 more)
+Cohesion: 0.15
+Nodes (14): 3.1. Conectar Database ao Metabase (se ainda não conectado), 3.2. Criar Dashboard Principal, 3.3. Criar Dashboard de Alertas, 3.4. Configurar Auto-Refresh, 3.5. Compartilhar Dashboards, code:sql (SELECT), code:sql (SELECT), code:sql (SELECT d.name, COUNT(c.id)) (+6 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.14
@@ -147,23 +147,23 @@ Cohesion: 0.17
 Nodes (12): 4.1. Teste Manual - Enviar Email de Teste, 4.2. Aguardar Processamento (5-10 minutos), 4.3. Validar Resultados, code:block13 (Para: <email-monitorado>@clinfec.com.br), code:block14 (Para: <email-monitorado>@clinfec.com.br), code:block15 (Para: <email-monitorado>@clinfec.com.br), code:sql (-- Ver emails recebidos), 🧪 FASE 4: TESTES END-TO-END (+4 more)
 
 ## Knowledge Gaps
-- **218 isolated node(s):** `Persona`, `Missao`, `Dominio de atuacao`, `Stack`, `Criticidade` (+213 more)
+- **217 isolated node(s):** `Persona`, `Missao`, `Dominio de atuacao`, `Stack`, `Criticidade` (+212 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `🚀 GUIA DE DEPLOY E ATIVAÇÃO - EMAIL CLASSIFIER` connect `Community 3` to `Community 11`, `Community 43`, `Community 4`, `Community 7`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `🚀 Guia de Setup - Email Classifier` connect `Community 13` to `Community 40`, `Community 2`, `Community 5`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `📊 FASE 3: CONFIGURAÇÃO METABASE DASHBOARDS` connect `Community 7` to `Community 3`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `Persona`, `Missao`, `Dominio de atuacao` to the rest of the system?**
-  _218 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _217 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._

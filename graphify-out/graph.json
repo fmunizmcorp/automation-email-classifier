@@ -1750,7 +1750,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "docs_deploy_guide_fase_1_importa\u00e7\u00e3o_dos_workflows_no_n8n",
-      "community": 4,
+      "community": 3,
       "norm_label": "\ud83d\uddc2\ufe0f fase 1: importacao dos workflows no n8n"
     },
     {
@@ -1760,7 +1760,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_1_criar_pasta_no_n8n",
-      "community": 4,
+      "community": 3,
       "norm_label": "1.1. criar pasta no n8n"
     },
     {
@@ -1770,7 +1770,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_2_importar_workflows_em_ordem",
-      "community": 4,
+      "community": 3,
       "norm_label": "1.2. importar workflows (em ordem)"
     },
     {
@@ -1780,7 +1780,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "docs_deploy_guide_1_3_configurar_credenciais_em_cada_workflow",
-      "community": 4,
+      "community": 3,
       "norm_label": "1.3. configurar credenciais em cada workflow"
     },
     {
@@ -1790,7 +1790,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "docs_deploy_guide_a_gmail_oauth2_workflows_01_e_03",
-      "community": 4,
+      "community": 3,
       "norm_label": "a. gmail oauth2 (workflows 01 e 03)"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "docs_deploy_guide_b_openai_api_workflow_02",
-      "community": 4,
+      "community": 3,
       "norm_label": "b. openai api (workflow 02)"
     },
     {
@@ -1810,7 +1810,7 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "docs_deploy_guide_c_postgresql_todos_os_workflows",
-      "community": 4,
+      "community": 3,
       "norm_label": "c. postgresql (todos os workflows)"
     },
     {
@@ -1820,7 +1820,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "docs_deploy_guide_d_osticket_api_workflows_04_e_05",
-      "community": 4,
+      "community": 3,
       "norm_label": "d. osticket api (workflows 04 e 05)"
     },
     {
@@ -1830,7 +1830,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "docs_deploy_guide_fase_2_ativa\u00e7\u00e3o_dos_workflows",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u2699\ufe0f fase 2: ativacao dos workflows"
     },
     {
@@ -1840,7 +1840,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "docs_deploy_guide_2_1_ordem_de_ativa\u00e7\u00e3o_importante",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.1. ordem de ativacao (importante!)"
     },
     {
@@ -1850,7 +1850,7 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "docs_deploy_guide_2_2_como_ativar_um_workflow",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.2. como ativar um workflow"
     },
     {
@@ -1860,7 +1860,7 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "docs_deploy_guide_2_3_valida\u00e7\u00e3o_p\u00f3s_ativa\u00e7\u00e3o",
-      "community": 3,
+      "community": 4,
       "norm_label": "2.3. validacao pos-ativacao"
     },
     {
@@ -1870,7 +1870,7 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "docs_deploy_guide_postgresql_verificar_dados",
-      "community": 3,
+      "community": 4,
       "norm_label": "postgresql - verificar dados"
     },
     {
@@ -1880,7 +1880,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "docs_deploy_guide_n8n_verificar_execu\u00e7\u00f5es",
-      "community": 3,
+      "community": 4,
       "norm_label": "n8n - verificar execucoes"
     },
     {
@@ -3124,7 +3124,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L29",
-      "community": 4,
+      "community": 3,
       "norm_label": "code:block1 (/home/user/webapp/automations/automation-email-classifier/n8)",
       "id": "docs_deploy_guide_codeblock_1"
     },
@@ -3133,7 +3133,7 @@
       "file_type": "document",
       "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L139",
-      "community": 3,
+      "community": 4,
       "norm_label": "code:sql (-- conectar ao banco)",
       "id": "docs_deploy_guide_codeblock_2"
     },
@@ -3181,15 +3181,6 @@
       "community": 7,
       "norm_label": "code:sql (select)",
       "id": "docs_deploy_guide_codeblock_9"
-    },
-    {
-      "label": "code:sql (SELECT)",
-      "file_type": "document",
-      "source_file": "docs/DEPLOY_GUIDE.md",
-      "source_location": "L329",
-      "community": 7,
-      "norm_label": "code:sql (select)",
-      "id": "docs_deploy_guide_codeblock_11"
     },
     {
       "label": "code:sql (SELECT)",
@@ -3971,6 +3962,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
+      "target": "import_manual_guide_passo_a_passo_completo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "IMPORT_MANUAL_GUIDE.md",
       "source_location": "L191",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3991,16 +3992,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
-      "target": "import_manual_guide_passo_a_passo_completo"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4016,16 +4007,6 @@
       "confidence_score": 1.0,
       "source": "import_manual_guide_guia_de_importa\u00e7\u00e3o_manual_email_classifier",
       "target": "import_manual_guide_suporte"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "IMPORT_MANUAL_GUIDE.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "import_manual_guide_passo_a_passo_completo",
-      "target": "import_manual_guide_5_teste_r\u00e1pido_5_min"
     },
     {
       "relation": "contains",
@@ -4066,6 +4047,16 @@
       "confidence_score": 1.0,
       "source": "import_manual_guide_passo_a_passo_completo",
       "target": "import_manual_guide_4_ativar_workflows_2_min"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "IMPORT_MANUAL_GUIDE.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "import_manual_guide_passo_a_passo_completo",
+      "target": "import_manual_guide_5_teste_r\u00e1pido_5_min"
     },
     {
       "relation": "contains",
@@ -4191,36 +4182,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_descri\u00e7\u00e3o"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L170",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_m\u00e9tricas_esperadas"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L198",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
-      "target": "readme_pr\u00f3ximos_passos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L28",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4246,6 +4207,16 @@
       "confidence_score": 1.0,
       "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
       "target": "readme_credenciais"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_descri\u00e7\u00e3o"
     },
     {
       "relation": "contains",
@@ -4291,11 +4262,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_m\u00e9tricas_esperadas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
       "target": "readme_objetivo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L198",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_automa\u00e7\u00e3o_email_classifier_com_ia",
+      "target": "readme_pr\u00f3ximos_passos"
     },
     {
       "relation": "contains",
@@ -4501,16 +4492,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_o_que_foi_implementado",
-      "target": "status_final_fase_3_n8n_workflows_documenta\u00e7\u00e3o_100_50_min"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4526,6 +4507,16 @@
       "confidence_score": 1.0,
       "source": "status_final_o_que_foi_implementado",
       "target": "status_final_fase_2_database_100_60_min"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_o_que_foi_implementado",
+      "target": "status_final_fase_3_n8n_workflows_documenta\u00e7\u00e3o_100_50_min"
     },
     {
       "relation": "contains",
@@ -4561,21 +4552,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_m\u00e9tricas_de_sucesso",
-      "target": "status_final_implementa\u00e7\u00e3o_manual_pendente"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L248",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "status_final_m\u00e9tricas_de_sucesso",
       "target": "status_final_implementa\u00e7\u00e3o_autom\u00e1tica_conclu\u00edda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_m\u00e9tricas_de_sucesso",
+      "target": "status_final_implementa\u00e7\u00e3o_manual_pendente"
     },
     {
       "relation": "contains",
@@ -4621,16 +4612,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L314",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
-      "target": "status_final_3_credenciais_necess\u00e1rias"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L294",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4646,6 +4627,16 @@
       "confidence_score": 1.0,
       "source": "status_final_instru\u00e7\u00f5es_para_continuar",
       "target": "status_final_2_executar_setup_manual"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_instru\u00e7\u00f5es_para_continuar",
+      "target": "status_final_3_credenciais_necess\u00e1rias"
     },
     {
       "relation": "contains",
@@ -4671,16 +4662,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L348",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "status_final_dicas_importantes",
-      "target": "status_final_seguran\u00e7a"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "STATUS_FINAL.md",
       "source_location": "L342",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4701,11 +4682,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "STATUS_FINAL.md",
-      "source_location": "L376",
+      "source_location": "L348",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "status_final_checklist_final",
-      "target": "status_final_ap\u00f3s_ativar"
+      "source": "status_final_dicas_importantes",
+      "target": "status_final_seguran\u00e7a"
     },
     {
       "relation": "contains",
@@ -4716,6 +4697,16 @@
       "confidence_score": 1.0,
       "source": "status_final_checklist_final",
       "target": "status_final_antes_de_ativar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "STATUS_FINAL.md",
+      "source_location": "L376",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "status_final_checklist_final",
+      "target": "status_final_ap\u00f3s_ativar"
     },
     {
       "relation": "contains",
@@ -5481,16 +5472,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/DEPLOY_GUIDE.md",
-      "source_location": "L286",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "docs_deploy_guide_dashboard_email_classifier_overview",
-      "target": "docs_deploy_guide_codeblock_11"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/DEPLOY_GUIDE.md",
       "source_location": "L297",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5515,7 +5496,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_deploy_guide_dashboard_email_classifier_alertas_e_monitoramento",
-      "target": "docs_deploy_guide_codeblock_11"
+      "target": "docs_deploy_guide_codeblock_3"
     },
     {
       "relation": "contains",
@@ -6529,5 +6510,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "84e220af87a2bdbe344c06e3b88183aa2107f5d3"
+  "built_at_commit": "c01a53dba7f4813da9406cdab1d98c3b80086acf"
 }
